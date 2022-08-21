@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "source_sans_proregular";
+    src: url("../fonts/sourcesanspro-italic.woff2") format("woff2"),
+        url("../fonts/sourcesanspro-italic.woff") format("woff"),
+        url("../fonts/sourcesanspro-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "source_sans_proregular";
+    src: url("../fonts/sourcesanspro-light.woff2") format("woff2"),
+        url("../fonts/sourcesanspro-light.woff") format("woff"),
+        url("../fonts/sourcesanspro-light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source_sans_proregular";
+    src: url("../fonts/sourcesanspro-regular.woff2") format("woff2"),
+        url("../fonts/sourcesanspro-regular.woff") format("woff"),
+        url("../fonts/sourcesanspro-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source_sans_proregular";
+    src: url("../fonts/sourcesanspro-semibold.woff2") format("woff2"),
+        url("../fonts/sourcesanspro-semibold.woff") format("woff"),
+        url("../fonts/sourcesanspro-semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gotham_bold";
+    src: url("../fonts/Gotham-Bold.woff2") format("woff2"),
+        url("../fonts/Gotham-Bold.woff") format("woff"),
+        url("../fonts/Gotham-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "gotham_book";
+    src: url("../fonts/Gotham-Book.woff2") format("woff2"),
+        url("../fonts/Gotham-Book.woff") format("woff"),
+        url("../fonts/Gotham-Book.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "outfit";
+    src: url("../fonts/Outfit-Regular.woff2") format("woff2"),
+        url("../fonts/Outfit-Regular.woff") format("woff"),
+        url("../fonts/Outfit-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "outfit";
+    src: url("../fonts/Outfit-Bold.woff2") format("woff2"),
+        url("../fonts/Outfit-Bold.woff") format("woff"),
+        url("../fonts/Outfit-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "zapf_dingbats";
+    src: url("../fonts/ZapfDingbats.woff2") format("woff2"),
+        url("../fonts/ZapfDingbats.woff") format("woff"),
+        url("../fonts/ZapfDingbats.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "minion_pro";
+    src: url("../fonts/MinionPro-Regular.woff2") format("woff2"),
+        url("../fonts/MinionPro-Regular.woff") format("woff"),
+        url("../fonts/MinionPro-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,65 @@
+$filter-control-bg: #e5f2f8;
+$filter-control-bg-active: $color-blue;
+$filter-control-color: $color-blue;
+$filter-control-color-active: #fff;
+$filter-control-border: $color-blue;
+
+.filter {
+    font-size: 16px;
+    min-height: auto;
+
+    @include tablet {
+        font-size: 18px;
+        min-height: 800px;
+    }
+}
+
+.filter__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filter__control-list {
+    display: flex;
+    margin-bottom: 72px;
+}
+
+.filter__control {
+    width: calc(100% / 3);
+
+    &:not(:last-child) a {
+        border-right: 1px solid $filter-control-border;
+    }
+
+    a {
+        @include text-wrap;
+        display: block;
+        padding-top: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+        text-align: center;
+        text-decoration: none;
+        background-color: $filter-control-bg;
+        color: $filter-control-color;
+        transition: opacity $transition-duration;
+    }
+
+    &:hover a,
+    &:focus a,
+    &.is-active a {
+        background-color: $filter-control-bg-active;
+        color: $filter-control-color-active;
+        transition: opacity $transition-duration;
+    }
+}
+
+.filter__item {
+    width: 100%;
+    margin-bottom: 56px;
+
+    @include tablet {
+        width: 48%;
+    }
+}

@@ -1,0 +1,15 @@
+include ./../components/logo/logo
+include ./../components/mobile-menu/mobile-menu
+include ./../components/navbar/navbar
+include ./../components/search/search
+include ./../components/lang-switch/lang-switch
+
+header.header.header--main.flex-grow-0
+    .header__inner
+        .header__logo
+            +logo
+            +mobile-menu
+        .header__nav.justify-content-end.align-items-center.flex-wrap
+            +navbar
+            +search
+            +lang-switch

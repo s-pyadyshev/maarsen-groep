@@ -1,0 +1,223 @@
+.personality {
+    font-size: 0;
+    line-height: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &::after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+    }
+
+    @media (min-width: 480px) {
+        margin-top: 110px;
+        margin-bottom: 110px;
+    }
+
+    @media (min-width: 1024px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include desktop {
+        margin-bottom: 208px;
+    }
+
+    &--partners-page {
+        @include desktop {
+            overflow: hidden;
+            display: inline-block;
+            width: 585px;
+            margin-top: 65px;
+            margin-bottom: 125px;
+        }
+    }
+
+    &__info {
+        line-height: 1.43;
+        font-size: 16px;
+        float: right;
+        width: 50%;
+        padding-right: 15px;
+        padding-left: 20px;
+        padding-top: 50px;
+
+        @media (min-width: 480px) {
+            font-size: 28px;
+            padding-top: 130px;
+        }
+
+        @media (min-width: 1024px) {
+            padding-right: 0px;
+        }
+
+        @include desktop {
+            padding-left: 98px;
+            padding-top: 82px;
+        }
+    }
+
+    &__info-text {
+        display: inline-block;
+        max-width: 470px;
+    }
+
+    &__name-info {
+        font-family: $font-family-gotham-bold;
+        line-height: 1.21;
+        letter-spacing: 0.3em;
+        font-size: 18px;
+        text-transform: uppercase;
+        // clear: both;
+        width: calc(50% + 15px);
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 15px;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // align-items: flex-start;
+
+        @media (min-width: 480px) {
+            font-size: 29px;
+        }
+
+        @media (min-width: 768px) {
+            text-align: left;
+            padding-left: 50px;
+            float: right;
+            width: 50%;
+        }
+    }
+
+    &__name-wrap {
+        display: inline-flex;
+        text-align: left;
+        flex-direction: column;
+        padding-top: 25px;
+
+        @media (min-width: 480px) {
+            padding-top: 50px;
+        }
+
+        @media (min-width: 768px) {
+            width: 210px;
+        }
+    }
+
+    &__position {
+        color: $text-personality-position-color;
+
+        @media (min-width: 768px) {
+            word-wrap: break-word;
+            width: 120px;
+            align-self: flex-end;
+        }
+    }
+
+    &__name {
+        @media (min-width: 768px) {
+            word-wrap: break-word;
+            width: 125px;
+        }
+    }
+
+    &__image-block {
+        position: relative;
+        width: 50%;
+        float: left;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__quote {
+        font-family: $font-family-gotham-bold;
+        font-size: 8.8rem;
+        letter-spacing: 0.3em;
+        line-height: 0.9;
+        position: absolute;
+        top: 10px;
+        right: -60px;
+        color: $text-personality-position-color;
+
+        @media (min-width: 480px) {
+            top: 20px;
+            font-size: 19.8rem;
+            right: -135px;
+        }
+
+        @include desktop {
+            top: 30px;
+        }
+    }
+
+    &--partners-page & {
+        &__quote {
+            color: $color-orange;
+            transform: rotate(180deg);
+            top: -30px;
+            right: -35px;
+
+            @media (min-width: 480px) {
+                top: -75px;
+                right: -75px;
+            }
+        }
+
+        &__position {
+            color: $color-orange;
+
+            @include desktop {
+                align-self: flex-start;
+            }
+        }
+
+        &__image-block {
+            @include desktop {
+                float: none;
+                width: calc(100% - 85px);
+                height: 275px;
+            }
+        }
+
+        &__image {
+            @include desktop {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__info {
+            @include desktop {
+                float: none;
+                display: inline-block;
+                padding-left: 0;
+                width: 60%;
+                vertical-align: top;
+                padding-top: 35px;
+            }
+        }
+
+        &__name-info {
+            @include desktop {
+                display: inline-block;
+                width: 40%;
+                float: none;
+                vertical-align: top;
+            }
+        }
+
+        &__name-wrap {
+            @include desktop {
+                padding-top: 40px;
+            }
+        }
+    }
+}

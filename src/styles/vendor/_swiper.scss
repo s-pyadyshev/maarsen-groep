@@ -1,0 +1,16 @@
+@import "../../../node_modules/swiper/dist/css/swiper.min";
+
+.swiper-slide img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    transition: all ease-in-out $transition-duration;
+}
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
+    transition: all ease-in-out $transition-duration;
+}

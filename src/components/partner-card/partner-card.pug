@@ -1,0 +1,15 @@
+mixin partner-card(src, city, nameProject, info)
+    .partner-card
+        .partner-card__image-block
+            image(src=src, alt='').partner-card__image
+        
+        .partner-card__content-wrap
+            .partner-card__title
+                span.partner-card__city #{city}
+                span.partner-card__name #{nameProject}
+            
+            .partner-card__info #{info}
+
+            a(href="#;", title="").partner-card__link
+                span Lees meer
+                span.partner-card__arrow-link.arrow-next-green

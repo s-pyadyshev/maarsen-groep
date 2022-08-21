@@ -1,0 +1,13 @@
+mixin personality(src, name, position, infoText)
+    .personality(class!=attributes.class)
+        .personality__image-block
+            img(src=src, alt="").personality__image
+            span.personality__quote “
+        
+        .personality__info 
+            span.personality__info-text !{infoText}
+
+        .personality__name-info
+            span.personality__name-wrap
+                span.personality__name #{name}
+                span.personality__position #{position}

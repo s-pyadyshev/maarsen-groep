@@ -1,0 +1,37 @@
+$contact-color: #fff;
+$contact-title: $color-green;
+
+.contact {
+    @include text-wrap;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $contact-color;
+
+    &__item {
+        letter-spacing: 0.3px;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+
+            @include tablet {
+                margin-bottom: 9px;
+            }
+        }
+
+        &--title {
+            text-transform: uppercase;
+            color: $contact-title;
+            letter-spacing: 5px;
+        }
+
+        &--partners {
+            color: $color-orange;
+        }
+    }
+
+    a {
+        @include transition;
+        text-decoration: none;
+        color: $contact-color;
+    }
+}

@@ -1,0 +1,78 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.list-inline {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*------------------------------------*\
+  #TEXT
+\*------------------------------------*/
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-wrap {
+    @include text-wrap;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.background-text:before {
+    content: "vastgoed nieuws advertenties betrokken economisch milieu ontwikkeling vacatures  vastgoed nieuws advertenties betrokken economisch milieu ontwikkeling vacatures vastgoed nieuws advertenties betrokken economisch milieu ontwikkeling vacatures vastgoed nieuws advertenties betrokken economisch milieu ontwikkeling vacatures vastgoed nieuws advertenties betrokken economisch milieu ontwikkeling vacatures";
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2a3840;
+    color: #3f4c53;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 22px;
+    text-align: justify;
+
+    @include tablet {
+        font-size: 70px;
+    }
+}
+
+.background-text-team:before {
+    content: "Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes. Wij geloven dat samenwerken de sleutel is tot succes.";
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2a3840;
+    color: #3f4c53;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 22px;
+    text-align: justify;
+    padding-top: 60px;
+
+    @include tablet {
+        font-size: 70px;
+    }
+}

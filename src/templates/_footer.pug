@@ -1,0 +1,58 @@
+include ./../components/contact/contact
+include ./../components/social/social
+include ./../components/supports/supports
+
+footer.footer
+    .container
+        .footer__inner
+            .footer__col
+                +contact(class=addClass)
+            .footer__col
+                <ul class="list social">
+                    <li class="social__item">
+                        <a class="social__link" href="https://www.instagram.com/maarsengroep/" target="_blank" rel="noopener noreferrer">
+                            <svg><use xlink:href="/img/sprite.svg#ln"></use></svg>
+                        </a>
+                    </li>
+                    
+                    <li class="social__item">
+                        <a class="social__link" href="https://www.facebook.com/maarsengroepamsterdam/" target="_blank" rel="noopener noreferrer">
+                            <svg><use xlink:href="/img/sprite.svg#inst"></use></svg>
+                        </a>
+                    </li>
+                    
+                    <li class="social__item">
+                        <a class="social__link" href="https://nl.linkedin.com/company/maarsen-groep" target="_blank" rel="noopener noreferrer">
+                            <svg><use xlink:href="/img/sprite.svg#yt"></use></svg>
+                        </a>
+                    </li>
+                    
+                    <li class="social__item">
+                        <a class="social__link" href="https://twitter.com/maarsengroep_nl" target="_blank" rel="noopener noreferrer">
+                            <svg><use xlink:href="/img/sprite.svg#tw"></use></svg>
+                        </a>
+                    </li>
+
+                    <li class="social__item">
+                        <a class="social__link" href="https://twitter.com/maarsengroep_nl" target="_blank" rel="noopener noreferrer">
+                            <svg><use xlink:href="/img/sprite.svg#wsp"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+                .social__tel
+                    p Huurders kantoren - tel. <a href="tel:0205407443">020 – 54 07 443</a>
+                    p Huurders woningen - tel. <a href="tel:0203017730">020 – 30 17 730</a>
+                    p Storing & reparatie - tel. <a href="tel:0884324100">088 – 43 24 100</a>
+            .footer__col
+                .footer__links
+                    ul.footer_menu
+                        li
+                            span Informatie
+                        li
+                            a(href="") Disclaimer
+                        li
+                            a(href="") Privacy statement
+                        li
+                            a(href="") Colofon
+                        li
+                            a(href="") Vacatures

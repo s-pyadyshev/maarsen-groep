@@ -1,0 +1,36 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + .checkbox__icon {
+    display: inline;
+    position: relative;
+    padding-left: 28px;
+}
+
+input[type="checkbox"] + .checkbox__icon:before {
+    content: "";
+    display: block;
+    position: absolute;
+    padding: 8px;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: #fff;
+    border: solid 1px $c-checkbox;
+}
+
+input[type="checkbox"]:checked + .checkbox__icon:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: $c-checkbox;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+input[type="checkbox"]:checked:disabled + .checkbox__icon:after {
+    background-color: $c-state-disabled;
+    border-color: $c-state-disabled;
+}

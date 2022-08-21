@@ -1,0 +1,20 @@
+.dev-panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.dev-panel-btn {
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}

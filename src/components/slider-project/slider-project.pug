@@ -1,0 +1,14 @@
+mixin slider-project(data)
+    .slider-project
+        .slider-project__container.swiper-container.js-slider-project
+            ul.slider-project__list.swiper-wrapper
+                each item in data.items
+                    li.slider-project__item.swiper-slide
+                        //- mixin partner-card(src, city, nameProject, info)
+                        +partner-card(item.src, item.city, item.nameProject, item.info)
+        
+        .slider-project__pagination.js-slider-project-pagination
+
+        .slider-project__arrow-wrap 
+            .slider-project__arrow.slider-project__arrow--prev.arrow-prev-black.js-slider-project-prev
+            .slider-project__arrow.slider-project__arrow--next.arrow-next-black.js-slider-project-next

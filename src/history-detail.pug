@@ -1,0 +1,159 @@
+//- Insert common template for all pages
+extends ./templates/_base-template
+
+include ./components/person-card/person-card
+include ./components/title/title
+
+block head
+    - var pageTitle = 'Title';
+
+block variables
+    - var theme = "theme-default"
+    - var headerClass = "header--main"
+
+block content
+    main.main
+        section.section.section--team
+            .container
+                .section__wrap
+                    +person-card({
+                        img: 'img/team14.png',
+                        name: 'SAMANTHA TE NIJENHUIS',
+                        position: 'PROPERTY MANAGER'
+                    })
+                    +person-card({
+                        img: 'img/team15.png',
+                        name: 'VINCENT VAN SABBEN',
+                        position: 'SENIOR PROJECTONTWIKKELAAR'
+                    })
+                    +person-card({
+                        img: 'img/team16.png',
+                        name: 'DIEDERIK VAN ZEIJL',
+                        position: 'DIRECTEUR'
+                    })
+
+        section.section.history
+            .container
+                +title('h2', 'historie')
+                .history__wrap
+                    .history__description
+                        .history__description-info
+                            h3.history__description-title
+                                | sinds
+                                br
+                                | 1946
+                            p.history__description-text
+                                a(href="#")
+                                    | Bekijk hier de bedrijfsgeschiedenis.
+                                |  Een korte film over het onstaan van Maarsen Groep. Vandaag is het bedrijf nog steeds springlevend en speelt het al al die jaren een belangrijke rol in de vastgoed sector.
+                        .history__description-image
+                            img(src="img/history.jpg" title="" alt="")
+                    .history__content
+                        h4.history__content-title
+                            | De naoorlogse woningnood als aanleiding
+                        p.history__text
+                            | In 1946 startte Frits Maarsen met het bouwen van sociale huurwoningen in de Amsterdamse Watergraafsmeer. Er was een enorm tekort aan woningen en hij was een aannemer die zelf het initiatief voor bouwplannen nam. Dit maakte hem een projectontwikkelaar nog voordat het woord bestond. Zijn visie was: bouwen waar grote vraag naar is, daarna niet gaan voor de snelle winst uit verkoop, maar voor stabiele inkomsten uit verhuur. Vanuit die gedachte breidde hij zijn activiteiten gestaag uit naar Buitenveldert, de Randstad, Oost-Europa en de Verenigde Staten. 
+                        a(href="#").history__link
+                            | Lees verder >>
+                .history__wrap.history__wrap--margin-top
+                    .history__description.history__description--text
+                        h4.history__content-title
+                            | Jaren tachtig: kantoren worden gehuurd in plaats van gekocht
+                        p.history__text
+                            | Midden jaren zeventig droeg Frits senior het directiestokje over aan zijn zoon Frits junior, die hierbij ook zijn zelf opgerichte vastgoedbedrijf inbracht. In de jaren tachtig richtte Frits junior zich op kantoren. Dit was tegelijk met de trend dat bedrijven, naar Angelsaksisch model, overstapten op het huren van bedrijfsruimten in plaats van het bezitten ervan. Als eerste zag hij de mogelijkheden van de grond tussen Amsterdam en Amstelveen, waar alleen nog maar een gebouw van de Vrije Universiteit stond. De naam Zuidas bestond nog niet. Daar kocht hij in 1998 de grond van tennispark Popeye Goldstar, dat een aantal jaren later verhuisde. Bijna twintig jaar mocht hij niets met deze grond doen tot de gemeente akkoord ging met de uitruil van andere kavels waar Maarsen Groep vervolgens Noma House, Hourglass en Gershwin Brothers bouwde.
+                        h4.history__content-title
+                            | Als je houdt wat je bouwt, bouw je beter
+                        p.history__text
+                            | Doordat de Maarsen Groep projecten ontwikkelt die in eigen beheer blijven, wordt bij de bouw gekozen voor kwaliteit en beproefde innovaties. Zo participeerde Frits junior in een van eerste bedrijven die zich toelegde op de productie van prefab gevels, en werd direct ook klant. Dat was in de jaren [tachtig?] revolutionair en is nu gemeengoed. Met de Queens Tower in Amsterdam was de Maarsen Groep misschien wel de allereerste om voor een WKO-installatie te kiezen. In Rotterdam werd een primeur gescoord door met de Westerlaantoren als eerste een gebouw met water uit de Maas te koelen. En vandaag worden aan de Klaprozenweg in Amsterdam betaalbare woningen , circulair gebouwd. Duurzamer en technologisch slimmer bouwer is vaak duurder, maar omdat de Maarsen Groep de gebouwen in eigendom houdt, kan die meerprijs ruimschoots worden terugverdiend tijdens de exploitatie. 
+                        p.history__text
+                            | Op deze weg, 75 jaar geleden ingeslagen, gaat de Maarsen Groep verder met het ontwikkelen van vastgoed waar de maatschappij om vraagt. Nu, morgen en overmorgen. Want ook dan zijn we er nog!
+                    .history__content.history__content--image
+                        .history__content-image
+                            img(src="img/history-1.jpg" title="" alt="")
+                        .history__content-image
+                            img(src="img/history-2.jpg" title="" alt="")
+
+        section.section.section--topical.history-vacancy
+            .container
+                +title('h2', 'vacature')
+                .swiper-container.section__topical-slider.js-slider-topical
+                    .swiper-wrapper
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/vacancy-1.jpg" alt="" title="" width="350" height="350")
+                                .card-topical__wrap
+                                    .history-vacancy__date
+                                        | 12 april 2022 - Amsterdam
+                                    h4.card-topical__subtitle
+                                        | Assistent Asset Management 
+                                    h5.card-topical__title
+                                        | 32-40 uur
+                                    a(href="#").card-topical__link
+                                        | Solliciteer hier
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/vacancy-2.jpg" alt="" title="" width="350" height="350")
+                                .card-topical__wrap
+                                    .history-vacancy__date
+                                        | 10 maart 2022 - Zaandam
+                                    h4.card-topical__subtitle
+                                        | Projectmanager Vastgoedinspecties 
+                                    h5.card-topical__title
+                                        | full time
+                                    a(href="#").card-topical__link
+                                        | Solliciteer hier
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/vacancy-3.jpg" alt="" title="" width="350" height="350")
+                                .card-topical__wrap
+                                    .history-vacancy__date
+                                        | 22 februari 2022 - Hoofddorp
+                                    h4.card-topical__subtitle
+                                        | Assistant Commercial Manager 
+                                    h5.card-topical__title
+                                        | full time
+                                    a(href="#").card-topical__link
+                                        | Solliciteer hier
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/vacancy-1.jpg" alt="" title="" width="350" height="350")
+                                .card-topical__wrap
+                                    .history-vacancy__date
+                                        | 12 april 2022 - Amsterdam
+                                    h4.card-topical__subtitle
+                                        | Assistent Asset Management 
+                                    h5.card-topical__title
+                                        | 32-40 uur
+                                    a(href="#").card-topical__link
+                                        | Solliciteer hier
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/vacancy-2.jpg" alt="" title="" width="350" height="350")
+                                .card-topical__wrap
+                                    .history-vacancy__date
+                                        | 10 maart 2022 - Zaandam
+                                    h4.card-topical__subtitle
+                                        | Projectmanager Vastgoedinspecties 
+                                    h5.card-topical__title
+                                        | full time
+                                    a(href="#").card-topical__link
+                                        | Solliciteer hier
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/vacancy-3.jpg" alt="" title="" width="350" height="350")
+                                .card-topical__wrap
+                                    .history-vacancy__date
+                                        | 22 februari 2022 - Hoofddorp
+                                    h4.card-topical__subtitle
+                                        | Assistant Commercial Manager 
+                                    h5.card-topical__title
+                                        | full time
+                                    a(href="#").card-topical__link
+                                        | Solliciteer hier
+                .section__topical-pagination.js-slider-topical-pagination

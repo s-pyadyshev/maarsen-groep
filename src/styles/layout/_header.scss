@@ -1,0 +1,105 @@
+$header-bg-main: #f3f3f8;
+$header-bg: rgba(255, 255, 255, 0.8);
+$header-bg-mobile: #fff;
+
+.header {
+    z-index: 2;
+    flex-grow: 0;
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: $header-bg-mobile;
+
+    @include tablet {
+        min-height: 90px;
+        padding-top: 20px;
+        padding-bottom: 0;
+        background-color: $header-bg;
+    }
+
+    @include desktop {
+        padding-top: 24px;
+        padding-bottom: 0;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1530px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+
+        @include tablet {
+            width: auto;
+        }
+    }
+
+    &__nav {
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        height: 100vh;
+        padding-top: 30px;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            height: auto;
+            padding-top: 0;
+        }
+
+        @include desktop {
+            flex-direction: row;
+        }
+
+        &.is-active {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.header--main {
+    background-color: $header-bg-main;
+}
+
+.header__nav__container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 65px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include tablet {
+        display: flex !important;
+        position: initial;
+        padding: 0;
+        width: auto;
+        background: transparent;
+    }
+}

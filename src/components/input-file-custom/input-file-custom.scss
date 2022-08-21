@@ -1,0 +1,31 @@
+$color-primary: #004A9D;
+$color-white: #fff;
+$color-black: #000;
+$c-border-input: $color-black;
+
+.input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    &__label {
+        display: inline-block;
+        padding: 5px;
+        color: $color-primary;
+        border: 1px solid $color-primary;
+        cursor: pointer;
+      
+        &:hover {
+          background-color: $color-primary;
+          color: $color-white;
+        }
+
+        * {
+            pointer-events: none;
+        }
+    }
+}
+

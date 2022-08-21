@@ -1,0 +1,16 @@
+@mixin transition {
+    transition: opacity $transition-duration;
+
+    &:hover {
+        transition: opacity $transition-duration;
+    }
+
+    &:active {
+        transition: opacity $transition-duration;
+    }
+
+    &:focus {
+        color: $link-active-color;
+        transition: opacity $transition-duration;
+    }
+}

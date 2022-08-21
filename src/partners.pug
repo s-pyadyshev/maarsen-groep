@@ -1,0 +1,117 @@
+extends ./templates/_base-template
+
+include ./components/personality/personality
+include ./components/title/title
+include ./components/partner-info/partner-info
+include ./components/info-block/info-block
+
+block head
+    - var pageTitle = 'Title';
+
+block variables
+    - var addClass="contact__item--partners"
+    - var theme = "theme-partner"
+
+block content
+    main.main
+        section.section.section--header
+            img(src="img/projects-bg.jpg" alt="").section__bg
+
+            .container.container--partners-page-header
+                .title-projects.title-projects--partners-page
+                    .title-projects__header
+                        h1.title-projects__title WIE<br>ZIJN<br>WIJ
+                    .title-projects__body
+                        p.title-projects__description Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.
+                        p.title-projects__description Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis.
+
+                +personality('./img/partners-jane.jpg', 'Jane Jackson, ', 'CEO', '“Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum.”').personality--partners-page
+
+        section.section
+            .container
+                +title('h1', 'Onze mensen')
+
+                .section__partner-list
+                    //- mixin partner-info(src, name, position, text)
+                    //- 1
+                    +partner-info('./img/partners-1.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 2
+                    +partner-info('./img/partners-2.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 3
+                    +partner-info('./img/partners-3.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 4
+                    //- mixin info-block(tag, src, title, text)
+                    +info-block('link', 'http://bipbap.ru/wp-content/uploads/2017/06/tmb_145037_6611.jpg', 'Bekijk onze projecten').info-block--row-2
+                    //- 5
+                    +partner-info('./img/partners-4.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 6
+                    +partner-info('./img/partners-1.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 7
+                    +partner-info('./img/partners-2.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 8
+                    +partner-info('./img/partners-3.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 9
+                    +partner-info('./img/partners-4.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 10
+                    +partner-info('./img/partners-1.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 11
+                    +info-block('', 'http://bipbap.ru/wp-content/uploads/2017/06/tmb_145037_6611.jpg', '', 'Als langetermijninvesteerder zijn wij in grote projecten een betrouwbare partner met een sterke commitment en de bereidheid om zelf substantieel mee te investeren. Maarsen Groep heeft een duidelijke focus, zowel geografisch als op type projecten, en loopt niet weg voor de eigen verantwoordelijkheid om vastgoedontwikkelingen, door langjarige betrokkenheid en toegewijde inzet, tot een succes te maken.').info-block--col-2
+                    //- 12
+                    +partner-info('./img/partners-2.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 13
+                    +partner-info('./img/partners-3.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 14
+                    +partner-info('./img/partners-4.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    //- 15
+                    +partner-info('./img/partners-2.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+                    +partner-info('./img/partners-1.jpg',
+                    'John Doe',
+                    'Property manager',
+                    'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.')
+
+        section.section
+            .container
+                +title('h1', 'Werken bij maarsen groep')
+
+            .vacancies
+                .vacancies__wrapper.vacancies__wrapper--empty
+                    .vacancies__text Er zijn op dit moment geen vacatures beschikbaar

@@ -1,0 +1,54 @@
+$form-control-color: $text-color-secondary;
+$form-control-border: $text-color-secondary;
+
+.form__group {
+    &.has-icons-right {
+        position: relative;
+
+        .form__icon {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @include tablet {
+                right: 0;
+            }
+        }
+    }
+}
+
+.form--search {
+    max-width: 100%;
+    width: 90%;
+    margin-bottom: 24px;
+
+    .form__control {
+        font-style: italic;
+        width: 100%;
+        padding: 4px 6px;
+        border: 1px solid $form-control-border;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: transparent;
+        color: $form-control-color;
+
+        @include tablet {
+            margin-bottom: 0;
+            padding: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid $form-control-border;
+            border-left: 0;
+            text-align: left;
+            text-transform: none;
+        }
+    }
+
+    @include tablet {
+        max-width: 126px;
+        width: 100%;
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+}

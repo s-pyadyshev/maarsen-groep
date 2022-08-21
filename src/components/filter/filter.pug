@@ -1,0 +1,20 @@
+include ./../slider-filter/slider-filter
+
+mixin filter
+    .filter
+        ul.filter__control-list
+            li.filter__control.is-active(data-filter=".kantoren")
+                a(href="#") Kantoren
+            li.filter__control(data-filter=".wonen")
+                a(href="#") Wonen
+            li.filter__control(data-filter=".winkels")
+                a(href="#") Winkels
+        .filter__content
+            .filter__item(data-category=".kantoren")
+                +slider-filter
+            .filter__item(data-category=".wonen")
+                +slider-filter
+            .filter__item(data-category=".winkels")
+                +slider-filter
+            .filter__item(data-category=".winkels")
+                +slider-filter

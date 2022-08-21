@@ -1,0 +1,235 @@
+.portfolio {
+    background-image: none;
+    padding: 20px 0 40px;
+
+    @include tablet {
+        padding: 30px 0 30px;
+    }
+
+    @include desktop {
+        padding: 44px 0 34px;
+    }
+
+    &__wrap-tabs {
+        width: calc(100% + 15px);
+        overflow-x: auto;
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+    &__tabs {
+        white-space: nowrap;
+        font-size: 0;
+
+        @include tablet {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            white-space: normal;
+        }
+    }
+
+    &__tab {
+        display: inline-block;
+        vertical-align: top;
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-black;
+        border: none;
+        background-color: $color-light;
+        padding: 0;
+        cursor: pointer;
+        transition-property: background-color;
+        transition-duration: $transition-duration;
+
+        @include tablet {
+            width: 25%;
+            height: 48px;
+            line-height: 48px;
+        }
+
+        @include desktop {
+            font-size: 16px;
+            height: 60px;
+            line-height: 60px;
+            letter-spacing: 0.5rem;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $color-dark-green;
+                transition-property: background-color;
+                transition-duration: $transition-duration;
+            }
+        }
+
+        &.active {
+            background-color: $color-dark-green;
+        }
+    }
+
+    &__content {
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 70px 0 0;
+
+        @include tablet {
+            margin-right: -24px;
+            margin-left: -24px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+
+        @include tablet {
+            width: 50%;
+            padding-right: 24px;
+            padding-left: 24px;
+        }
+
+        @include desktop {
+            width: calc(100% / 3);
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+        }
+
+        > div {
+            padding-bottom: 10px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+
+            @include tablet {
+                margin-bottom: 48px;
+            }
+        }
+    }
+
+    .container {
+        padding-right: 15px;
+
+        @include tablet {
+            padding-right: 15px;
+        }
+    }
+
+    .card-topical {
+        .card-topical__image {
+            height: 180px;
+
+            @include desktop {
+                height: 280px;
+            }
+
+            @include desktop {
+                height: 350px;
+            }
+
+            .swiper-container {
+                padding-bottom: 0;
+            }
+
+            .swiper-slide {
+                box-shadow: none;
+            }
+
+            .slider-filter__prev,
+            .slider-filter__next {
+                bottom: 25px;
+                background-image: none;
+                width: 48px;
+                height: 25px;
+
+                svg {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    fill: $color-white;
+                    color: $color-white;
+                }
+            }
+
+            .slider-filter__prev {
+                left: 13px;
+            }
+
+            .slider-filter__next {
+                right: 13px;
+            }
+        }
+
+        .card-topical__title {
+            @include desktop {
+                letter-spacing: 0.45rem;
+            }
+        }
+
+        .card-topical__subtitle {
+            font-weight: 300;
+            margin: 0 0 8px;
+
+            @include tablet {
+                margin: 0 0 12px;
+            }
+
+            @include desktop {
+                letter-spacing: 0.4rem;
+                margin: 0 0 40px;
+            }
+        }
+    }
+
+    .slider-filter {
+        height: 100%;
+    }
+
+    .slider-filter__icon {
+        transform: scale(0.6);
+    }
+
+    &--development {
+        .portfolio {
+            &__item {
+                @include desktop {
+                    min-height: 650px;
+                }
+            }
+
+            .card-topical__subtitle {
+                margin: 0 0 12px;
+
+                @include tablet {
+                    margin: 0 0 16px;
+                }
+
+                @include desktop {
+                    margin: 0 0 36px;
+                }
+            }
+        }
+    }
+}

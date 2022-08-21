@@ -1,0 +1,23 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* IE10 IE11 */
+    .section__partner-list {
+        display: block;
+        font-size: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .partner-info {
+        display: inline-flex;
+        width: calc(33.33% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    .info-block--row-2,
+    .info-block--col-2 {
+        display: block;
+        margin-bottom: 30px;
+    }
+}

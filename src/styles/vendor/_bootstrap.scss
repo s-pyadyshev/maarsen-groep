@@ -1,0 +1,59 @@
+// Bootstrap Flexbox Grid
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1360px,
+) !default;
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/mixins/grid";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/tooltip";
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+//tooltip overrides
+$tooltip-bg: #0085b8;
+
+.bs-tooltip-bottom .arrow::before,
+.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-width: 0 0.8rem 0.8rem;
+    border-bottom-color: $tooltip-bg;
+}
+
+.tooltip {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: -2px;
+}
+
+.tooltip-inner {
+    padding: 6px 12px;
+    border-radius: 0;
+    background-color: #0085b8;
+}

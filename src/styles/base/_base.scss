@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    margin: 0;
+    background-color: $body-bg;
+    color: $body-color ;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    &.mobile-menu-active {
+        overflow: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-family: $heading-font-family;
+}
+
+img {
+    box-sizing: content-box;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// FORMS
+input,
+select,
+textarea {
+    box-shadow: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+    appearance: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+svg {
+    fill: currentColor;
+
+    &:not(:root) {
+        overflow: hidden;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: $input-placeholder;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: $input-placeholder;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: $input-placeholder;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: $input-placeholder;
+    opacity: 1;
+}

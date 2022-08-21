@@ -1,0 +1,18 @@
+mixin info-block(tag, src, title, text)
+    - var varTag
+    
+    if tag == 'link'
+        - var varTag = 'a'
+    else
+        - var varTag = 'div'
+
+    #{varTag}.info-block(class!=attributes.class, href=(tag == 'link' ? '#;' : false))
+
+        img.info-block__image(src=src, alt="")
+
+        if title
+            .info-block__title #{title}
+                span.info-block__icon-title.icon-next-project
+
+        if text
+            .info-block__text #{text}

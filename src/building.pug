@@ -1,0 +1,28 @@
+//- Insert common template for all pages
+extends ./templates/_base-template
+
+include ./components/title/title
+include ./components/story/story
+include ./components/summary/summary
+
+block head
+    - var pageTitle = 'Title';
+
+block variables
+    - var theme = "theme-default"
+    - var headerClass = "header--main"
+
+block content
+    main.main
+        section.section.section--projects-header.section--header
+            img(src="img/header-bg.jpg" alt="").section__bg
+            .container.section__inner
+                .title-building
+                    .title-building__header
+                        h1.title-building__title On <br>ontdekte<br>parel
+                        .title-building__bar
+                            span point 7, amsterdam
+        section.section--story
+            .container-fluid
+                +story
+                +summary

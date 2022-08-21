@@ -1,0 +1,27 @@
+//- Insert common template for all pages
+extends ./templates/_base-template
+
+include ./components/features/features
+include ./components/filter/filter
+include ./components/title/title
+
+block variables
+    - var theme = "theme-project"
+
+block head
+    - var pageTitle = 'Title';
+
+block content
+    main.main
+        section.section.section--projects-header.section--header
+            img(src="img/projects-bg.jpg" alt="").section__bg
+            .container.section__inner
+                .title-projects
+                    .title-projects__header
+                        h1.title-projects__title Projecten
+                    .title-projects__body
+                        p.title-projects__description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        section.section--filter
+            .container
+                +filter
+

@@ -1,0 +1,79 @@
+$title-building-font-family: "gotham_bold", Arial, sans-serif;
+$title-building-color: #000;
+$title-building-bg: #fff;
+
+.title-building {
+    position: static;
+    left: 0;
+    bottom: -156px;
+    display: flex;
+    flex-direction: column;
+    font-family: $title-building-font-family;
+    max-width: 480px;
+    width: 100%;
+    color: $title-building-color;
+
+    @include tablet {
+        position: absolute;
+    }
+
+    @include desktop {
+        max-width: 580px;
+    }
+
+    &__bar {
+        @include tablet {
+            font-size: 18px;
+            letter-spacing: 6px;
+        }
+
+        &:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 64px;
+            height: 8px;
+            margin-right: 16px;
+            background-color: $color-green;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            letter-spacing: normal;
+            text-transform: uppercase;
+            color: $color-green;
+        }
+    }
+
+    &__header {
+        padding-top: 30px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        background: $title-building-bg;
+
+        @include tablet {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 1.3;
+        letter-spacing: 4px;
+        margin-bottom: 46px;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 36px;
+        }
+
+        @include desktop {
+            font-size: 6rem;
+            letter-spacing: 18px;
+        }
+    }
+}

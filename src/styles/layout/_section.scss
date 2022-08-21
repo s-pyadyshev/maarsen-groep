@@ -1,0 +1,398 @@
+$section-intro-bg: #eaf4e8;
+$section-description-color: #fff;
+$section-title-color: #000;
+$section-title-bar: #000;
+$section-color-mobile: #000;
+$section-title-bar: #afafaf;
+$section-title-bar-desktop: #000;
+$section-title-color-projects: #fff;
+
+.section--intro {
+    background-color: $section-intro-bg;
+    padding: 20px 0;
+
+    @include tablet {
+        padding: 40px 0;
+    }
+
+    @include desktop {
+        padding: 80px 0;
+    }
+}
+
+.section__description {
+    .section--intro & {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.5;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        color: $section-color-mobile;
+
+        @include tablet {
+            width: calc(100% - 60px);
+            color: $section-description-color;
+        }
+
+        @include desktop {
+            flex-direction: row;
+            font-size: 1.8rem;
+            width: calc(100% - 226px);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.06rem;
+            color: $color-white;
+            max-width: 100%;
+            width: 100%;
+            margin-top: 0;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+.section__inner {
+    flex-wrap: wrap;
+
+    .section--intro & {
+        position: relative;
+        display: flex;
+        padding-top: 60px;
+
+        @include tablet {
+            padding-top: 0;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .section--projects-header & {
+        position: absolute;
+        right: 30px;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.section__title {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-family: $font-family-gotham-bold;
+    font-size: 4rem;
+    line-height: 1.3;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $color-black;
+    z-index: 1;
+
+    @include tablet {
+        font-size: 36px;
+        letter-spacing: 18px;
+        color: $section-title-color;
+    }
+
+    @include desktop {
+        top: -18px;
+        font-size: 5.8rem;
+    }
+
+    .section--projects-header & {
+        text-transform: uppercase;
+        color: $section-title-color-projects;
+    }
+}
+
+.section__title-bar {
+    font-family: $font-family-gotham-bold, Arial, sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: $section-title-bar;
+
+    @include tablet {
+        margin-bottom: 24px;
+        color: $section-title-bar-desktop;
+    }
+
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 18px;
+        height: 4px;
+        margin-right: 8px;
+        background-color: $section-title-bar;
+
+        @include tablet {
+            width: 36px;
+            background-color: $section-title-bar-desktop;
+        }
+    }
+
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        letter-spacing: 4px;
+
+        .section--intro & {
+            @include tablet {
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+    .section--intro & {
+        position: absolute;
+        top: 36px;
+
+        @include tablet {
+            position: static;
+        }
+    }
+}
+
+.section__title-wrap {
+    .section--intro & {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 100%;
+        width: 0;
+        overflow: visible;
+        position: relative;
+
+        @include tablet {
+            width: 60px;
+        }
+
+        @include desktop {
+            width: 226px;
+        }
+
+        @media (min-width: 1600px) {
+            margin-left: -180px;
+        }
+    }
+}
+
+// section after header
+.section--header {
+    position: relative;
+    margin-top: -95px;
+}
+
+// main page slider section
+.section--main {
+    margin-top: -95px;
+}
+
+.section__project-background {
+    background-color: $section-intro-bg;
+    height: 420px;
+    padding-top: 50px;
+    margin-bottom: -300px;
+
+    @media (min-width: 480px) {
+        padding-top: 110px;
+        margin-bottom: -410px;
+        height: 642px;
+    }
+
+    @include desktop {
+        height: 235px;
+        margin-bottom: -235px;
+    }
+}
+
+.section--project {
+    overflow: hidden; //ie fix
+
+    .container {
+        overflow: hidden;
+
+        @media (min-width: 1280px) {
+            overflow: visible;
+        }
+    }
+}
+
+.section {
+    &__news-wrapper {
+        @media (min-width: 1024px) {
+            font-size: 0;
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        @include desktop {
+            margin-bottom: 130px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    &__partner-list {
+        margin-bottom: 30px;
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        @include desktop {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 60px;
+            margin-bottom: 135px;
+        }
+    }
+}
+
+.section--video {
+    background-color: $color-black;
+
+    video {
+        display: block;
+        width: 100%;
+        max-width: 1168px;
+        height: 180px;
+        margin: 0 auto;
+
+        @include tablet {
+            height: 340px;
+        }
+
+        @include desktop {
+            height: 657px;
+        }
+    }
+}
+
+.section__description-image {
+    width: 100%;
+    height: 160px;
+
+    @include tablet {
+        height: 240px;
+    }
+
+    @include desktop {
+        width: 44%;
+        height: 100%;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.section__description-text {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    background-color: $color-dark-green;
+
+    @include desktop {
+        width: 56%;
+        height: 100%;
+        padding: 76px 58px 36px 54px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $color-white;
+        margin: 0 0 24px;
+    }
+}
+
+.section {
+    &--team {
+        background-color: $color-elephant;
+        position: relative;
+        padding: 40px 0;
+        overflow: hidden;
+
+        @include desktop {
+            padding: 16px 0;
+        }
+    }
+
+    &__title-team {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 26px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-dark-green;
+        letter-spacing: 0.3rem;
+    }
+
+    &__wrap {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    @include tablet {
+        &--team {
+            padding: 32px 0;
+        }
+
+        &--team & {
+            &__bg {
+                top: 48px;
+                bottom: 48px;
+            }
+        }
+
+        &__title-team {
+            font-size: 36px;
+            line-height: 80px;
+        }
+
+        &__wrap {
+            gap: 24px;
+        }
+    }
+
+    @include desktop {
+        &--team {
+            padding: 48px 0;
+        }
+
+        &--team & {
+            &__bg {
+                top: 56px;
+                bottom: 56px;
+            }
+        }
+
+        &__wrap {
+            gap: 48px;
+        }
+
+        &__title-team {
+            &--wide {
+                letter-spacing: 1rem;
+            }
+        }
+    }
+}

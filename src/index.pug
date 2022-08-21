@@ -1,0 +1,160 @@
+//- Insert common template for all pages
+extends ./templates/_base-template
+
+include ./components/personality/personality
+include ./components/features/features
+include ./components/slider-main/slider-main
+include ./components/title/title
+include ./components/slider-project/slider-project
+include ./components/partner-card/partner-card
+include ./components/news-card/news-card
+include ./components/button/button
+
+block head
+    - var pageTitle = 'Title';
+
+block variables
+    - var theme = "theme-default"
+    - var headerClass = "header--main"
+
+block content
+    main.main
+        section.section.section--video
+            video(width="400" controls)
+                source(src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4")
+                source(src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg")
+                Your browser does not support HTML video.
+
+        section.section.section--intro
+            .container
+                .section__inner
+                    .section__title-wrap
+                        h1.section__title betrokken<br>vastgoed
+                    .section__description
+                        .section__description-image
+                            img(src="img/intro.jpg" alt="" title="" width="352" height="330")
+                        .section__description-text
+                            h3 kwaliteit is geen keuze, dat is wie we zijn
+                            p Maarsen Groep is een in Amsterdam gevestigde vastgoedinvesteerder die met de ontwikkeling, transformatie en renovatie van (bestaand) vastgoed een duurzame bijdrage levert aan de stad. Het familiebedrijf heeft ruim zeventig jaar ervaring in de ontwikkeling van appartementen en commercieel onroerend goed in de Randstad.
+                    +features
+
+        section.section.section--info
+            .container
+                ul.section__info-list
+                    li.section__info-item
+                        h4
+                            | Een familiebedrijf
+                            br
+                            | met familiewaarden
+                        p
+                            | Num core venimus dolupta nullab ipsam eatis adici ut ut is doluptatur, at. Il molore, nossiminis porro tem harum ra quo excerum eosani si dem quisquam quam, ut expelita adionse caborum adici doluptia cuptat dolesequae est aut quis sit, accum alis doluptae volori officabor molupta quatem comnis essim volor rem fugia volutas eumet res et laut aut eosam re.
+                    li.section__info-item
+                        h4
+                            | Onze werkwijze
+                            br
+                            | draait om balans
+                        p
+                            | Ibus eatur, que volupis pro es es demporatur as de volupicia volorpore resto vendita vendio. Cero cumquasit, volupta ereped quid evenihitempe ressit utem atias et vendentiis et quiam ut ipsaper iorerum que doluptae cus am reius, ad et aliquis sequate nationes quatior am et imus pelendi psanduciis ratem quis nis volorro is nus, con cus net.
+                    li.section__info-item
+                        h4
+                            | Bij ons mogen de kosten
+                            br
+                            | voor de baten uitgaan
+                        p
+                            | Solorend untium res reris nem inimi, sundiatur, suntia et officto temqui con num rem. Itas et esequis sit hillorrum aut untio. Faciendi aut et, te vent volut ex eum velloremquia sunt officae cerspernam, tem rescienis et omnia qui rehendam vene nihil mosant lic tecupiditius quas a dolorehentem excestia suntibus debis et ullamus eveliqu iationse nus audigni scillecepuda.
+                    li.section__info-item
+                        h4
+                            | Ook morgen en overmorgen
+                            br
+                            | kunt u op ons bouwen
+                        p
+                            | Cesar ommolorates sunt, sereperrum que id magnis estenihit quideriae porerit aute et eos moluptatecus ad ma volum etusapeles est, quatus et exerciam nam quatur, core voloressunt. fugitiu ntecta sinciis doluptaecti doluptae nos modit remporecaera in recaeperoris est, consendae cum quaerib usciatis esequo que dem conse perum laccum ipsum.
+
+        section.section.section--topical.background-text
+            .container
+                +title('h2', 'actueel')
+                .swiper-container.section__topical-slider.js-slider-topical
+                    .swiper-wrapper
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-1.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | INTERVIEW PROPERTY NL
+                                    h5.card-topical__subtitle
+                                        | MONIQUE MAARSEN, ALGEMEEN DIRECTEUR
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-2.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | WIJ ZIJN OP ZOEK
+                                    h5.card-topical__subtitle
+                                        | TECHNISCH PROPERTY&nbsp;MANAGER
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-3.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | GERSHWIN BROTHERS
+                                    h5.card-topical__subtitle
+                                        | PARNASSUSWE
+                                        br
+                                        | AMSTERDAM
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-1.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | INTERVIEW PROPERTY NL
+                                    h5.card-topical__subtitle
+                                        | MONIQUE MAARSEN, ALGEMEEN DIRECTEUR
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-2.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | WIJ ZIJN OP ZOEK
+                                    h5.card-topical__subtitle
+                                        | TECHNISCH PROPERTY&nbsp;MANAGER
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-3.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | GERSHWIN BROTHERS
+                                    h5.card-topical__subtitle
+                                        | PARNASSUSWE
+                                        br
+                                        | AMSTERDAM
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                .section__topical-pagination.js-slider-topical-pagination

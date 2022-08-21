@@ -1,0 +1,17 @@
+mixin partner-info(src, name, position, text)
+    .partner-info
+        .partner-info__image-block
+            img(src=src, alt="").partner-info__image
+        
+        .partner-info__content
+            .partner-info__title
+                .partner-info__name #{name}
+                .partner-info__position #{position}
+            
+            .partner-info__text #{text}
+
+        ul.partner-info__social
+            li.partner-info__social-item
+                a(href='#;', title='').partner-info__social-link.icon-linkedin-orange
+            li.partner-info__social-item
+                a(href='#;', title='').partner-info__social-link.icon-mail-orange

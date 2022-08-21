@@ -1,0 +1,99 @@
+extends ./templates/_base-template
+
+include ./components/banner/banner
+include ./components/person-card/person-card
+
+block head
+    - var pageTitle = 'Title';
+
+block variables
+
+block content
+    main.main
+        +banner('img/groep-smal.jpg')
+        section.section
+            .container
+                h1.section__title-team het team
+        section.section.section--team.background-text-team
+            .container
+                .section__wrap
+                    +person-card({
+                        img: 'img/team1.png',
+                        name: 'JOOST BINER',
+                        position: 'FINANCIAL CONTROLLER'
+                    })
+                    +person-card({
+                        img: 'img/team2.png',
+                        name: 'TON BOON',
+                        position: 'DIRECTEUR'
+                    })
+                    +person-card({
+                        img: 'img/team3.png',
+                        name: 'MARC DE BRUIJN',
+                        position: 'SENIOR MEDEWERKER FINANCIËLE ADMINISTRATIE'
+                    })
+                    +person-card({
+                        img: 'img/team4.png',
+                        name: 'SIPKE DEKKER',
+                        position: 'SENIOR FISCALIST'
+                    })
+                    +person-card({
+                        img: 'img/team5.png',
+                        name: 'CHANTAL DUIJVESTIJN',
+                        position: 'MEDEWERKER PROPERTY MANAGEMENT'
+                    })
+                    +person-card({
+                        img: 'img/team6.png',
+                        name: 'SHARIFA FATAH',
+                        position: 'MEDEWERKER FINANCIËLE ADMINISTRATIE'
+                    })
+                    +person-card({
+                        img: 'img/team7.png',
+                        name: 'ERIK-JAN FLIPSEN',
+                        position: 'PROJECTADMINISTRATEUR'
+                    })
+                    +person-card({
+                        img: 'img/team8.png',
+                        name: 'JEROEN VAN DER HEIJDEN',
+                        position: 'HOOFD VASTGOED'
+                    })
+                    +person-card({
+                        img: 'img/team9.png',
+                        name: 'TOM HILDERINK',
+                        position: 'PROJECTONTWIKKELAAR'
+                    })
+                    +person-card({
+                        img: 'img/team10.png',
+                        name: 'LUUS JAGERMAN',
+                        position: 'ASSISTENT VASTGOED'
+                    })
+                    +person-card({
+                        img: 'img/team11.png',
+                        name: 'LUUK KOPS',
+                        position: 'PROJECTONTWIKKELAAR'
+                    })
+                    +person-card({
+                        img: 'img/team12.png',
+                        name: 'MONIQUE MAARSEN',
+                        position: 'ALGEMEEN DIRECTEUR'
+                    })
+                    +person-card({
+                        img: 'img/team13.png',
+                        name: 'MARLIES NAGEL',
+                        position: 'MANAGEMENT ASSISTENT HR'
+                    })
+                    +person-card({
+                        img: 'img/team14.png',
+                        name: 'SAMANTHA TE NIJENHUIS',
+                        position: 'PROPERTY MANAGER'
+                    })
+                    +person-card({
+                        img: 'img/team15.png',
+                        name: 'VINCENT VAN SABBEN',
+                        position: 'SENIOR PROJECTONTWIKKELAAR'
+                    })
+                    +person-card({
+                        img: 'img/team16.png',
+                        name: 'DIEDERIK VAN ZEIJL',
+                        position: 'DIRECTEUR'
+                    })

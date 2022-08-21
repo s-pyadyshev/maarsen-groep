@@ -1,0 +1,41 @@
+$lang-switch-font: "gotham_bold", Arial, sans-serif;
+$lang-switch-border: $text-color-secondary;
+$lang-switch-border-mobile: $color-green;
+
+.lang-switch {
+
+    &__btn {
+        display: block;
+        font-family: $lang-switch-font;
+        font-size: 1rem;
+        line-height: 2.2;
+        width: 27px;
+        height: 27px;
+        border: 2px solid transparent;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        color: $text-color-secondary;
+        transition: all ease-in-out $transition-duration;
+
+        &:hover,
+        &:focus,
+        &.is-active {
+            border: 2px solid $lang-switch-border-mobile;
+            transition: all ease-in-out $transition-duration;
+
+            @include tablet {
+                border: 2px solid $lang-switch-border;
+            }
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            margin-right: 22px;
+        }
+    }
+}

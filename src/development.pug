@@ -1,0 +1,415 @@
+//- Insert common template for all pages
+extends ./templates/_base-template
+
+include ./components/banner/banner
+include ./components/title/title
+
+block head
+    - var pageTitle = 'Title';
+
+block variables
+    - var theme = "theme-default"
+    - var headerClass = "header--main"
+
+block content
+    main.main
+        +banner('img/development-banner.jpg', 'ontwikkelINGEN maarsen groep')
+        section.section.section--topical.portfolio.portfolio--development
+            .container
+                .portfolio__wrap-tabs
+                    ul.portfolio__tabs
+                        li(data-tab="exploitation-1").portfolio__tab.js-portfolio-tab.active
+                            | Alle
+                        li(data-tab="exploitation-2").portfolio__tab.js-portfolio-tab
+                            | Kantoren
+                        li(data-tab="exploitation-3").portfolio__tab.js-portfolio-tab
+                            | Winkels
+                        li(data-tab="exploitation-4").portfolio__tab.js-portfolio-tab
+                            | Wonen
+                .portfolio__content(data-tab="exploitation-1").js-portfolio-content.show
+                    ul.portfolio__list
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-1.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-2.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-3.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                            .js-slider-filter-next.slider-filter__next
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | De connectie
+                                    h5.card-topical__subtitle
+                                        | startbaan amstelveen
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-2.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-3.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-4.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                            .js-slider-filter-next.slider-filter__next
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | the modernist
+                                    h5.card-topical__subtitle
+                                        | kruisplein rotterdam
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-3.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-4.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-5.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                            .js-slider-filter-next.slider-filter__next
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | caritas & fortitudo
+                                    h5.card-topical__subtitle
+                                        | postjesweg amsterdam
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-4.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-5.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-6.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                            .js-slider-filter-next.slider-filter__next
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | klaprozenweg
+                                    h5.card-topical__subtitle
+                                        | buiksloterham amsterdam noord
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-5.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-6.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-7.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                            .js-slider-filter-next.slider-filter__next
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | De distel
+                                    h5.card-topical__subtitle
+                                        | distelweg amsterdam
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-6.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-7.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-1.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                            .js-slider-filter-next.slider-filter__next
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | Open
+                                    h5.card-topical__subtitle
+                                        | prof. e.m. Meijerslaan Amstelveen
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-7.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-1.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-2.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                            .js-slider-filter-next.slider-filter__next
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | Bovenkerkerweg
+                                    h5.card-topical__subtitle
+                                        | Bovenkerkerpolder amstelveen
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                .portfolio__content(data-tab="exploitation-2").js-portfolio-content
+                    ul.portfolio__list
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-2.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-3.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-4.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                            <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                        .js-slider-filter-next.slider-filter__next
+                                            <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | De connectie
+                                    h5.card-topical__subtitle
+                                        | startbaan amstelveen
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                .portfolio__content(data-tab="exploitation-3").js-portfolio-content
+                    ul.portfolio__list
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-3.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-4.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-5.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                            <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                        .js-slider-filter-next.slider-filter__next
+                                            <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | De connectie
+                                    h5.card-topical__subtitle
+                                        | startbaan amstelveen
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                .portfolio__content(data-tab="exploitation-4").js-portfolio-content
+                    ul.portfolio__list
+                        li.portfolio__item
+                            .card-topical
+                                .card-topical__image
+                                    .slider-filter.swiper-container.js-slider-filter
+                                        ul.slider-filter__list.swiper-wrapper
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-4.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-5.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                            li.slider-filter__item.swiper-slide
+                                                img(src="img/portfolio-6.jpg" alt="sliderFilterPhoto" width="350" height="350")
+                                        .slider-filter__controls
+                                            .js-slider-filter-prev.slider-filter__prev
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-left"></use></svg>
+                                            .js-slider-filter-next.slider-filter__next
+                                                <svg><use xlink:href="/img/sprite.svg#arrow-right"></use></svg>
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | De connectie
+                                    h5.card-topical__subtitle
+                                        | startbaan amstelveen
+                                    p.card-topical__text
+                                        | Orem sae. Loreicipsa conse nisciet ut voleser ferrovi debitae. Itatat occus dipsam, nimilit es est, vero millate mporae sit repel millatem etur sum sitam, omnimagnam excea auta videstiorro.
+                                    ul.slider-filter__icon-list
+                                        li.slider-filter__icon.icon-building-grey(data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText")
+                                        li.slider-filter__icon.icon-area-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-location-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-parking-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+                                        li.slider-filter__icon.icon-website-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText")
+
+        section.section.section--topical.background-text
+            .container
+                +title('h2', 'actueel')
+                .swiper-container.section__topical-slider.js-slider-topical
+                    .swiper-wrapper
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-1.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | INTERVIEW PROPERTY NL
+                                    h5.card-topical__subtitle
+                                        | MONIQUE MAARSEN, ALGEMEEN DIRECTEUR
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-2.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | WIJ ZIJN OP ZOEK
+                                    h5.card-topical__subtitle
+                                        | TECHNISCH PROPERTY&nbsp;MANAGER
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-3.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | GERSHWIN BROTHERS
+                                    h5.card-topical__subtitle
+                                        | PARNASSUSWE
+                                        br
+                                        | AMSTERDAM
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-1.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | INTERVIEW PROPERTY NL
+                                    h5.card-topical__subtitle
+                                        | MONIQUE MAARSEN, ALGEMEEN DIRECTEUR
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-2.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | WIJ ZIJN OP ZOEK
+                                    h5.card-topical__subtitle
+                                        | TECHNISCH PROPERTY&nbsp;MANAGER
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                        .swiper-slide
+                            .card-topical
+                                .card-topical__image
+                                    img(src="img/topical-3.jpg" alt="" title="" width="350" height="236")
+                                .card-topical__wrap
+                                    h4.card-topical__title
+                                        | GERSHWIN BROTHERS
+                                    h5.card-topical__subtitle
+                                        | PARNASSUSWE
+                                        br
+                                        | AMSTERDAM
+                                    p.card-topical__text
+                                        | Maarsen Groep Asdam te, num meri parta nis perunihilia inu eternique nit, ne noribusa vignam pribunum med facitius, atque consid condi peciam fuiteat.
+                                    a(href="#").card-topical__link
+                                        | LEES VERDER >
+                .section__topical-pagination.js-slider-topical-pagination

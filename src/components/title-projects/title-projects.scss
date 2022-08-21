@@ -1,0 +1,149 @@
+$title-project-font-family: "gotham_bold", Arial, sans-serif;
+$title-projects-color: #fff;
+$title-project-bg: $color-blue;
+
+.title-projects {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    width: 100%;
+    color: $title-projects-color;
+
+    @include desktop {
+        max-width: 600px;
+    }
+
+    &--partners-page {
+        position: static;
+        margin-top: -50px;
+        max-width: 602px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include desktop {
+            display: inline-flex;
+            width: 630px;
+            max-width: none;
+            vertical-align: top;
+            margin-left: 0;
+            margin-right: 40px;
+            margin-top: -115px;
+            margin-bottom: 120px;
+        }
+    }
+
+    &__body {
+        padding-right: 24px;
+        padding-bottom: 24px;
+        padding-left: 24px;
+        background-color: $title-project-bg;
+
+        @include desktop {
+            padding-right: 68px;
+            padding-bottom: 60px;
+            padding-left: 68px;
+        }
+    }
+
+    &__description {
+        line-height: 1.6;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 7px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: $title-projects-color;
+        }
+    }
+
+    &__header {
+        padding-right: 30px;
+        padding-left: 30px;
+        background: linear-gradient(180deg, transparent 50%, $color-blue 50%);
+
+        @include tablet {
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+    }
+
+    &__title {
+        font-family: $title-project-font-family;
+        font-size: 20px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: 36px;
+        }
+
+        @include desktop {
+            font-size: 5.4rem;
+            letter-spacing: 16px;
+        }
+    }
+
+    &--partners-page & {
+        &__header {
+            background: $color-orange;
+            padding-left: 24px;
+            padding-right: 24px;
+
+            @include tablet {
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-bottom: 10px;
+            }
+        }
+
+        &__body {
+            background: $color-orange;
+
+            @include tablet {
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-bottom: 80px;
+            }
+        }
+
+        &__title {
+            margin-top: -10px;
+
+            @include tablet {
+                margin-top: -20px;
+            }
+
+            @include desktop {
+                margin-top: -28px;
+            }
+        }
+
+        &__description {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+
+                @include desktop {
+                    margin-bottom: 40px;
+                }
+            }
+
+            &:not(:first-child)::before {
+                display: none;
+            }
+
+            &::before {
+                @include tablet {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

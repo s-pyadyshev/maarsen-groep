@@ -1,0 +1,16 @@
+include ./../components/logo/logo
+include ./../components/mobile-menu/mobile-menu
+include ./../components/navbar/navbar
+include ./../components/search/search
+include ./../components/lang-switch/lang-switch
+
+header.header(class=headerClass)
+    .header__inner
+        .header__logo
+            +logo
+            +mobile-menu
+        .header__nav__container
+            .header__nav
+                +navbar
+                +search
+                +lang-switch

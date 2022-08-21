@@ -1,0 +1,13 @@
+mixin news-card(src, title, text, author, date)
+    .news-card
+        a(href="#;", title="").news-card__image-block
+            img(src=src, alt='').news-card__image
+        
+        .news-card__content-wrap
+            a(href="#;", title="").news-card__info
+                .news-card__title #{title}
+                .news-card__text #{text}
+            
+            .news-card__author-date
+                .news-card__author #{author}
+                .news-card__date #{date}

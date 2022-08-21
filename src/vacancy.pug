@@ -1,0 +1,101 @@
+//- Insert common template for all pages
+extends ./templates/_base-template
+
+include ./components/banner/banner
+include ./components/title/title
+
+block head
+    - var pageTitle = 'Title';
+
+block variables
+    - var theme = "theme-default"
+    - var headerClass = "header--main"
+
+block content
+    main.main
+        +banner('img/groep-smal.jpg')
+        section.section
+            .container
+                h1.section__title-team.section__title-team--wide vacature
+
+        section.section.vacancy-head
+            .container
+                .vacancy-head__content
+                    .vacancy-head__image
+                        img(src="img/vacancy-single.jpg" alt="" title="" width="250" height="250")
+                    .vacancy-head__wrap
+                        h2.vacancy-head__title
+                            | Bouw & Vastgoed
+                        .vacancy-head__name
+                            | Assistent Asset Management
+                        .vacancy-head__time
+                            | 32-40 uur
+
+        section.section.vacancy
+            .container
+                .vacancy__content
+                    .vacancy__aside
+                        h3
+                            | Assistent Asset Management
+                        h4
+                            | Amsterdam 32&#8209;40&nbsp;uur
+                        p 
+                            | Wij noemen de dingen bij 
+                            | Maarsen Groep graag gewoon bij de naam. Zoals onze USP’s. 
+                            | Dat zijn Jeroen, Ton, Daniel, Diederik en natuurlijk Monique. 
+                            | En niet te vergeten Vincent, Luus en Luuk, Joost, Samantha en Chantal, De Connectie, Caritas & Fortitudo en The Modernist. Wil je onze USP’s beter leren kennen? 
+                            | Lees dan verder!
+                    .vacancy__wrap
+                        h3
+                            | Jouw functie
+                        p Wij bouwen succesvol op onze eigen cultuur en sfeer, persoonlijk en betrokken. De vastgoed wereld heeft een hard imago, een ‘cowboy cultuur’ en vaak een echte corporate sfeer. Daar doen wij bij Maarsen Groep dus niet aan mee. Onze collega’s zijn de belangrijkste ‘assets’. En onze gebouwen, daar zijn we ontzettend trots op. De lijnen zijn kort, als je als Property Manager een idee hebt, ligt het direct op de tafel waar het besloten wordt. Onze dag is helemaal geslaagd als we weer eens langs de door ons ontwikkelde gebouwen rijden, we huurders hebben gesproken die blij zijn over een mooie locatie, of als we op kantoor gelachen hebben met elkaar. Vaak zetten we dat stapje extra en helpen we een huurder bijvoorbeeld met een verhuizing of een aanpassing die net wat verder gaat.
+                        p In de functie van Assistent Asset Management ben je verantwoordelijk voor:
+                        p 
+                            | Ondersteunt bij projecten in voorbereiding, bewaken van voortgang en nakomen van gemaakte afspraken;
+                            | Biedt projectondersteuning op specifieke dossiers;
+                            | Verzorgt binnen aangegeven kaders en conform afspraken de in- en externe informatievoorziening richting betrokkenen;
+                            | Meldt onderhoud aan en verwerkt de onderhoudscontracten;
+                            | Verwerkt de opdrachtbonnen en maakt objectkaarten;
+                            | Bereidt huurvoorstellen voor;
+                            | Draagt (mede) zorg voor het afhandelen en opvolging van telefonische verzoeken van huurders en externen;
+                            | Neemt de Servicedesk over in voorkomende gevallen
+                            | Indien de urgentie dat vraagt, wordt de opdracht uitgezet aan een externe partij/onderhoudsbedrijf;
+                            | Werkt contracten in conceptfase uit;
+                            | Verricht diverse administratieve werkzaamheden ter ondersteuning van de afdeling (post, archief, correspondentie, sleutelbeheer etc.)
+                            | Is, samen met de andere assistenten, telefonisch aanspreekpunt voor de organisatie
+                            | Ondersteunt bij het organiseren van interne (organisatie brede) en externe activiteiten;
+                            | Aansprekende projecten die op dit moment worden ontwikkeld:
+                        p 
+                            | De Connectie in Amstelveen met 140 woningen
+                            | Caritas & Fortitudo in Amsterdam met 68 woningen
+                            | The Modernist in Rotterdam centrum, met winkels, kantoorruimte en 300 appartementen
+                        blockquote
+                            | Samen er voor zorgen dat onze huurders zich prettig voelen in onze gebouwen, dat geeft voldoening.
+                        h3
+                            | Jouw team
+                        p Ons kantoor in Amsterdam Buitenveldert is onlangs vergroot, we zitten op een mooie locatie boven een aantal winkels en lunchrooms, al met al een bruisende omgeving. Het team Vastgoed zit in een grote open ruimte met Property Managers Patrick en Samantha , de Medewerker Property Management Chantal, Hoofd Vastgoed, Jeroen en wellicht ben jij onze nieuwe Assistent Asset Management.
+                        p De lunch wordt dagelijks geregeld door de Buurtboer, volgens je toekomstige collega komt het hierop neer: “zo lekker, je eet veel te veel” en op vrijdagmiddag is er altijd tijd en ruimte voor een borrel
+                        h3
+                            | Wij bieden
+                        p Projecten en vastgoed om trots op te zijn, veel impact in onze organisatie, leuke collega’s in een persoonlijk team in een mooi familiebedrijf waar hard gewerkt wordt en ruimte is voor ondernemerschap, plezier en jouw eigen ontwikkeling. In ruil voor jouw bijdrage ontvang je:
+                        p 
+                            | Salaris afhankelijk van ervaring tot €4.000 o.b.v. 40 uur
+                            | Vakantiegeld 8%
+                            | 13e maand eindejaarsuitkering
+                            | Bovengemiddelde pensioenopbouw
+                            | 27 vakantiedagen (waarvan 2 bedrijfsbreed ingepland)
+                            | Mobiele telefoon, laptop, thuiswerkplek
+                            | Parkeerkosten vergoed
+                            | Wat breng jij naar Maarssen groep?
+                        p Jij bent als Assistent Asset Management het type ‘leg maar neer, ik pak het wel op’. Jou is niet snel iets teveel. Dat je dus op dit moment nog niet bij een vastgoedbelegger of -ontwikkelaar werkt, vinden wij minder belangrijk. Wel heb je affiniteit met onroerend goed, ben je een teamspeler, en lever je een enthousiaste bijdrage aan de identiteit van Maarsen Groep. Je houdt van ‘afspraak is afspraak’, bent resultaatgericht en kritisch, en kunt snel schakelen en prioriteiten te stellen. De  fundamenten van jouw profiel zijn verder:
+                        p Bij voorkeur een afgeronde hbo-opleiding
+                        p 
+                            | Bij voorkeur woon je max ±40 km van het kantoor van Maarsen Groep in Amsterdam
+                            | Een positieve instelling
+                            | Oplossingsgericht en hands-on
+                            | Goede samenwerkende en communicatieve vaardigheden
+                            | Een flinke dosis energie
+                            | Bouw mee aan jezelf en aan het vastgoed bij Maarsen Groep!
+                        p Wij kijken uit naar jouw cv en motivatie. Solliciteer hier
+                        b Met deze vacature werven we onze kandidaten zelf.
+                        b Dit is dan ook geen oproep voor acquisitie.

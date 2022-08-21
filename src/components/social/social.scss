@@ -1,0 +1,80 @@
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 35px;
+
+    @include tablet {
+        justify-content: center;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 0;
+
+            @include tablet {
+                margin-right: 22px;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        transition-property: color;
+        transition-duration: $transition-duration;
+
+        @include desktop {
+            width: 55px;
+            height: 55px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-green;
+            transition-property: color;
+            transition-duration: $transition-duration;
+        }
+
+        svg {
+            width: inherit;
+            height: inherit;
+        }
+    }
+
+    &__tel {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition-property: color;
+            transition-duration: $transition-duration;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color-green;
+                transition-property: color;
+                transition-duration: $transition-duration;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+            margin-top: 14px;
+            letter-spacing: 0.3px;
+
+            @include tablet {
+                font-size: 13px;
+            }
+
+            @include desktop {
+                font-size: 16px;
+            }
+        }
+    }
+}

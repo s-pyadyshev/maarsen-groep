@@ -1,0 +1,30 @@
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: $color-dark-green;
+    margin-bottom: 20px;
+
+    @include tablet {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+
+    @include desktop {
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 1rem;
+        margin-bottom: 40px;
+    }
+
+    &--project {
+        @include desktop {
+            margin-top: -195px;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+$slider-filter-caption-color: #fff;
+$slider-caption-font: "gotham_bold", Arial, sans-serif;
+$slider-filter-shadow: rgba(0, 0, 0, 0.1);
+
+.slider-filter-container {
+    position: relative;
+    box-shadow: 0 0 10px $slider-filter-shadow;
+
+    &:hover {
+        .slider-filter__link-detail {
+            display: block;
+        }
+    }
+}
+
+.slider-filter {
+    &__caption {
+        font-family: $slider-caption-font;
+        line-height: 1.5;
+        letter-spacing: 4px;
+        position: absolute;
+        bottom: 22px;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: $slider-filter-caption-color;
+    }
+
+    &__city {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    &__controls {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    &__description {
+        font-size: 13px;
+        padding: 26px 12px 48px;
+        line-height: 1.6;
+
+        @include desktop {
+            padding: 26px 48px 48px;
+        }
+    }
+
+    &__icon-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    &__icon {
+        cursor: pointer;
+        margin-right: 16px;
+        margin-left: 16px;
+
+        @include desktop {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    &__item img {
+        width: 638px;
+        height: 206px;
+        object-fit: cover;
+
+        @include tablet {
+            height: 412px;
+        }
+    }
+
+    &__link-detail {
+        z-index: 2;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 18px;
+        padding: 16px 60px;
+        text-align: center;
+        text-decoration: none;
+        background-color: $color-blue;
+        color: $color-white;
+    }
+
+    &__location {
+        font-size: 18px;
+    }
+
+    &__prev {
+        position: absolute;
+        left: 0;
+        bottom: 35px;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    &__next {
+        position: absolute;
+        right: 0;
+        bottom: 35px;
+        z-index: 10;
+        cursor: pointer;
+    }
+}

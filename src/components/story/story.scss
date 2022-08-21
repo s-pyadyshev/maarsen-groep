@@ -1,0 +1,359 @@
+$story-title: "gotham_bold", Arial, sans-serif;
+$story-title-color: $color-green;
+$story-quote-color: $color-green;
+$story-quote-font-family: "gotham_bold", Arial, sans-serif;
+
+.story__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1650px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    @include desktop {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    img {
+        box-sizing: border-box;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+    }
+}
+
+.story__col {
+    margin-right: 0;
+    margin-bottom: 42px;
+    margin-left: 0;
+
+    @include tablet {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    @include desktop {
+        margin-bottom: 0;
+    }
+
+    &:first-child {
+        width: 100%;
+
+        @include tablet {
+            width: 30%;
+        }
+    }
+
+    &:nth-child(2) {
+        width: 100%;
+
+        @include tablet {
+            width: 35%;
+        }
+    }
+
+    &:last-child {
+        width: 100%;
+
+        @include tablet {
+            width: 35%;
+        }
+
+        img {
+            margin-right: auto;
+
+            @include desktop {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.story__description {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+
+    @include tablet {
+        font-size: 2.2px;
+    }
+
+    @include desktop {
+        max-width: 640px;
+        padding-left: 88px;
+    }
+}
+
+.story__gallery {
+    position: relative;
+    margin-bottom: 36px;
+
+    @include desktop {
+        margin-bottom: 90px;
+    }
+}
+
+.story__gallery-img-quote {
+    position: static;
+    top: 20%;
+    right: 0;
+    width: 100%;
+
+    @include tablet {
+        position: absolute;
+        width: 33%;
+    }
+
+    img {
+        width: auto;
+    }
+}
+
+.story__gallery-quote {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    line-height: 1.6;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-left: 0;
+    color: $color-green;
+
+    @include tablet {
+        margin-top: 0;
+        color: #50b948;
+    }
+
+    @include desktop {
+        font-size: 28px;
+        max-width: 512px;
+        margin-top: 55px;
+    }
+
+    &:before {
+        content: "“";
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        font-family: $story-quote-font-family;
+        font-size: 19.8rem;
+        line-height: 0;
+        transform: scale(-1, -1);
+        color: $story-quote-color;
+    }
+}
+
+.story__gallery-img-1 {
+    width: 100%;
+}
+
+.story__gallery-img-2 {
+    position: static;
+    top: 49%;
+    left: 5%;
+    width: 100%;
+
+    @include tablet {
+        position: absolute;
+        width: 28%;
+    }
+}
+
+.story__gallery-img-3 {
+    position: static;
+    left: 25px;
+    bottom: 0;
+    width: 100%;
+
+    @include tablet {
+        position: absolute;
+        width: 34%;
+    }
+}
+
+.story__gallery-img-4 {
+    position: static;
+    width: 100%;
+    padding-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include tablet {
+        width: 31%;
+        padding-top: 35px;
+    }
+}
+
+.story__gallery-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    img {
+        box-sizing: border-box;
+        border: 15px solid $color-white;
+        object-fit: cover;
+
+        @include tablet {
+            border: 30px solid $color-white;
+        }
+    }
+}
+
+.story__header {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 0;
+    margin-bottom: 44px;
+
+    @include desktop {
+        align-items: center;
+        padding-right: 120px;
+        padding-left: 120px;
+        margin-top: 228px;
+        margin-bottom: 88px;
+    }
+}
+
+.story__header-img {
+    width: 100%;
+    height: 50vh;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    object-fit: cover;
+
+    @include desktop {
+        width: 55%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.story__text {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+
+    @include desktop {
+        width: 45%;
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
+.story__text--middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1680px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 36px;
+    margin-left: auto;
+
+    @include desktop {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 140px;
+        margin-bottom: 140px;
+    }
+
+    .story__description {
+        max-width: 100%;
+        padding-left: 0;
+
+        @include desktop {
+            padding-left: 50px;
+        }
+    }
+
+    .story__title {
+        max-width: 28%;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        @include desktop {
+            padding-left: 20px;
+        }
+    }
+}
+
+.story__quote {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    line-height: 1.6;
+    padding-top: 62px;
+    color: $color-green;
+
+    @include desktop {
+        font-size: 28px;
+    }
+
+    &:before {
+        content: "“";
+        display: block;
+        position: absolute;
+        top: -20px;
+        right: 0;
+        font-family: $story-quote-font-family;
+        font-size: 19.8rem;
+        line-height: 0;
+        transform: scale(-1, -1);
+        color: $story-quote-color;
+    }
+}
+
+.story__title {
+    font-family: $story-title;
+    font-size: 20px;
+    max-width: 520px;
+    letter-spacing: 3px;
+    line-height: 1.6;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+    color: $story-title-color;
+
+    @include tablet {
+        font-size: 30px;
+        letter-spacing: 9px;
+    }
+
+    @include desktop {
+        margin-bottom: 72px;
+    }
+}

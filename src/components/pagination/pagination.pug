@@ -1,0 +1,14 @@
+mixin pagination
+    .b-pagination
+        a(href="#" title="Prev page").b-pagination__prev.icon-pagination-prev ◀
+        ul.b-pagination__list
+            li.b-pagination__item.is-active
+                a(href="#" title="Current page #{index}").b-pagination__number= index
+
+            li.b-pagination__item
+                a(href="#" title="Show more").b-pagination__number.is-collapsed ...
+            li.b-pagination__item
+                a(href="#" title="Go to page #{index}").b-pagination__number= index
+            li.b-pagination__item
+                a(href="#" title="Go to pagе #{index}").b-pagination__number= index
+        a(href="#" title="Next page").b-pagination__next.icon-pagination-next ▶
