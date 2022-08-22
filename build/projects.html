@@ -1,335 +1,416 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="">
-    <meta name="copyright" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="HandheldFriendly" content="True">
-    <meta http-equiv="cleartype" content="on">
-    <meta name="theme-color" content="#ffffff">
-    <link href="css/main.css" rel="stylesheet">
-  </head>
-  <body class="theme-project">
-    <header class="header">
-      <div class="header__inner">
-        <div class="header__logo"><a class="logo" href="#" title="LogoTitle"><img class="logo__img" src="img/logo-maarsen-groep.png" alt="LogoAlt" width="200" height="44"></a><a class="mobile-menu js-toggle-menu" href="#">
-                <div class="mobile-menu__icon">
-                  <div class="bar top"></div>
-                  <div class="bar middle"></div>
-                  <div class="bar bottom"></div>
-                </div></a>
-        </div>
-        <div class="header__nav__container">
-          <div class="header__nav">
-                <nav class="navbar">
-                  <ul class="navbar__list">
-                    <li class="navbar__item"><a class="navbar__link" href="#">Over ons</a>
-                      <ul class="sub-menu">
-                        <li><a href="#">Het team</a></li>
-                        <li><a href="#">Historie Maarsen groep</a></li>
-                        <li><a href="#">Vacatures</a></li>
-                      </ul>
-                    </li>
-                    <li class="navbar__item"><a class="navbar__link" href="#">Portefeuille</a>
-                      <ul class="sub-menu">
-                        <li><a href="#">Exploitatie</a></li>
-                        <li><a href="#">Ontwikkeling</a></li>
-                      </ul>
-                    </li>
-                    <li class="navbar__item"><a class="navbar__link" href="#">Nieuws</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="#">Contact</a></li>
-                  </ul>
-                </nav>
-                <form class="form form--search" action="">
-                  <div class="form__group has-icons-right">
-                    <input class="form__control w-100" type="search" name="search" placeholder="zoeken...">
-                    <input class="form__icon icon-search" type="submit" value="">
-                  </div>
-                </form>
-                <ul class="lang-switch">
-                  <li class="lang-switch__item"><a class="lang-switch__btn is-active" href="#">nl</a></li>
-                  <li class="lang-switch__item"><a class="lang-switch__btn" href="#">en</a></li>
-                </ul>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <meta name="copyright" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="theme-color" content="#ffffff">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="theme-project">
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo"><a class="logo" href="#" title="LogoTitle"><img class="logo__img"
+            src="img/logo-maarsen-groep.png" alt="LogoAlt" width="200" height="44"></a><a
+          class="mobile-menu js-toggle-menu" href="#">
+          <div class="mobile-menu__icon">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
           </div>
-        </div>
+        </a>
       </div>
-    </header>
-    <main class="main">
-      <section class="section section--projects-header section--header"><img class="section__bg" src="img/projects-bg.jpg" alt="">
-        <div class="container section__inner">
-          <div class="title-projects">
-            <div class="title-projects__header">
-              <h1 class="title-projects__title">Projecten</h1>
-            </div>
-            <div class="title-projects__body">
-              <p class="title-projects__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section--filter">
-        <div class="container">
-          <div class="filter">
-            <ul class="filter__control-list">
-              <li class="filter__control is-active" data-filter=".kantoren"><a href="#">Kantoren</a></li>
-              <li class="filter__control" data-filter=".wonen"><a href="#">Wonen</a></li>
-              <li class="filter__control" data-filter=".winkels"><a href="#">Winkels</a></li>
+      <div class="header__nav__container">
+        <div class="header__nav">
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item"><a class="navbar__link" href="#">Over ons</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Het team</a></li>
+                  <li><a href="#">Historie Maarsen groep</a></li>
+                  <li><a href="#">Vacatures</a></li>
+                </ul>
+              </li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Portefeuille</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Exploitatie</a></li>
+                  <li><a href="#">Ontwikkeling</a></li>
+                </ul>
+              </li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Nieuws</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Contact</a></li>
             </ul>
-            <div class="filter__content">
-              <div class="filter__item" data-category=".kantoren">
-                <div class="slider-filter-container"><a class="slider-filter__link-detail" href="#">Bekijk case</a>
-                  <div class="slider-filter swiper-container js-slider-filter">
-                    <ul class="slider-filter__list swiper-wrapper">
-                      <li class="slider-filter__item swiper-slide"><img src="img/project1.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project2.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project3.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project4.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="slider-filter__controls">
-                      <div class="js-slider-filter-prev slider-filter__prev icon-prev-project"></div>
-                      <div class="js-slider-filter-next slider-filter__next icon-next-project"></div>
-                    </div>
-                  </div>
-                  <div class="slider-filter__description">Op een paar minuten van de Zuidas en vlakbij Schiphol en het Amsterdamse Bos, zijn in Amsterdam vier vrijstaande kantoorpaviljoens gerealiseerd. De totale ontwikkeling bestaat uit vijf kantoorpaviljoens, welke samen het Cuserpark vormen. De vijf paviljoens liggen rond een tuin die tevens het dak vormt van een onderliggende parkeergarage.
-                    <ul class="slider-filter__icon-list">
-                      <li class="slider-filter__icon icon-building-grey" data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText"></li><!-- li.slider-filter__icon.icon-house-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText") -->
-                      <li class="slider-filter__icon icon-area-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-location-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-parking-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-space-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-website-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="filter__item" data-category=".wonen">
-                <div class="slider-filter-container"><a class="slider-filter__link-detail" href="#">Bekijk case</a>
-                  <div class="slider-filter swiper-container js-slider-filter">
-                    <ul class="slider-filter__list swiper-wrapper">
-                      <li class="slider-filter__item swiper-slide"><img src="img/project1.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project2.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project3.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project4.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="slider-filter__controls">
-                      <div class="js-slider-filter-prev slider-filter__prev icon-prev-project"></div>
-                      <div class="js-slider-filter-next slider-filter__next icon-next-project"></div>
-                    </div>
-                  </div>
-                  <div class="slider-filter__description">Op een paar minuten van de Zuidas en vlakbij Schiphol en het Amsterdamse Bos, zijn in Amsterdam vier vrijstaande kantoorpaviljoens gerealiseerd. De totale ontwikkeling bestaat uit vijf kantoorpaviljoens, welke samen het Cuserpark vormen. De vijf paviljoens liggen rond een tuin die tevens het dak vormt van een onderliggende parkeergarage.
-                    <ul class="slider-filter__icon-list">
-                      <li class="slider-filter__icon icon-building-grey" data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText"></li><!-- li.slider-filter__icon.icon-house-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText") -->
-                      <li class="slider-filter__icon icon-area-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-location-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-parking-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-space-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-website-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="filter__item" data-category=".winkels">
-                <div class="slider-filter-container"><a class="slider-filter__link-detail" href="#">Bekijk case</a>
-                  <div class="slider-filter swiper-container js-slider-filter">
-                    <ul class="slider-filter__list swiper-wrapper">
-                      <li class="slider-filter__item swiper-slide"><img src="img/project1.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project2.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project3.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project4.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="slider-filter__controls">
-                      <div class="js-slider-filter-prev slider-filter__prev icon-prev-project"></div>
-                      <div class="js-slider-filter-next slider-filter__next icon-next-project"></div>
-                    </div>
-                  </div>
-                  <div class="slider-filter__description">Op een paar minuten van de Zuidas en vlakbij Schiphol en het Amsterdamse Bos, zijn in Amsterdam vier vrijstaande kantoorpaviljoens gerealiseerd. De totale ontwikkeling bestaat uit vijf kantoorpaviljoens, welke samen het Cuserpark vormen. De vijf paviljoens liggen rond een tuin die tevens het dak vormt van een onderliggende parkeergarage.
-                    <ul class="slider-filter__icon-list">
-                      <li class="slider-filter__icon icon-building-grey" data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText"></li><!-- li.slider-filter__icon.icon-house-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText") -->
-                      <li class="slider-filter__icon icon-area-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-location-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-parking-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-space-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-website-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="filter__item" data-category=".winkels">
-                <div class="slider-filter-container"><a class="slider-filter__link-detail" href="#">Bekijk case</a>
-                  <div class="slider-filter swiper-container js-slider-filter">
-                    <ul class="slider-filter__list swiper-wrapper">
-                      <li class="slider-filter__item swiper-slide"><img src="img/project1.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project2.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project3.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                      <li class="slider-filter__item swiper-slide"><img src="img/project4.jpg" alt="sliderFilterPhoto" width="638" height="412"/>
-                        <div class="slider-filter__caption">
-                          <div class="slider-filter__location">cuserpark</div>
-                          <div class="slider-filter__city">AMSTERDAM</div>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="slider-filter__controls">
-                      <div class="js-slider-filter-prev slider-filter__prev icon-prev-project"></div>
-                      <div class="js-slider-filter-next slider-filter__next icon-next-project"></div>
-                    </div>
-                  </div>
-                  <div class="slider-filter__description">Op een paar minuten van de Zuidas en vlakbij Schiphol en het Amsterdamse Bos, zijn in Amsterdam vier vrijstaande kantoorpaviljoens gerealiseerd. De totale ontwikkeling bestaat uit vijf kantoorpaviljoens, welke samen het Cuserpark vormen. De vijf paviljoens liggen rond een tuin die tevens het dak vormt van een onderliggende parkeergarage.
-                    <ul class="slider-filter__icon-list">
-                      <li class="slider-filter__icon icon-building-grey" data-toggle="tooltip" data-placement="bottom" data-offset="30" title="TooltipText"></li><!-- li.slider-filter__icon.icon-house-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText") -->
-                      <li class="slider-filter__icon icon-area-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-location-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-parking-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-space-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                      <li class="slider-filter__icon icon-website-grey" data-toggle="tooltip" data-placement="bottom" title="TooltipText"></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+          </nav>
+          <form class="form form--search" action="">
+            <div class="form__group has-icons-right">
+              <input class="form__control w-100" type="search" name="search" placeholder="zoeken...">
+              <input class="form__icon icon-search" type="submit" value="">
             </div>
+          </form>
+          <ul class="lang-switch">
+            <li class="lang-switch__item"><a class="lang-switch__btn is-active" href="#">nl</a></li>
+            <li class="lang-switch__item"><a class="lang-switch__btn" href="#">en</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section section--projects-header section--header"><img class="section__bg" src="img/projects-bg.jpg"
+        alt="">
+      <div class="container section__inner">
+        <div class="title-projects">
+          <div class="title-projects__header">
+            <h1 class="title-projects__title">Projecten</h1>
+          </div>
+          <div class="title-projects__body">
+            <p class="title-projects__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus.</p>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
+      </div>
+    </section>
+    <section class="section--filter">
       <div class="container">
-        <div class="footer__inner">
-          <div class="footer__col">
-                <ul class="contact">
-                  <li class="contact__item contact__item--title">Contact</li>
-                  <li class="contact__item">Postbus 87030</li>
-                  <li class="contact__item">1080 JA Amsterdam</li>
-                  <li class="contact__item"><span>Tel:&nbsp;</span><a href="tel:0205407400">020 540 7400</a></li>
-                  <li class="contact__item"><a href="mailto:info@maarsengroep.nl">info@maarsengroep.nl</a></li>
-                </ul>
-          </div>
-          <div class="footer__col"><ul class="list social">
-<li class="social__item">
-<a class="social__link" href="https://www.instagram.com/maarsengroep/" target="_blank" rel="noopener noreferrer">
-<svg><use xlink:href="/img/sprite.svg#ln"></use></svg>
-</a>
-</li>
-<li class="social__item">
-<a class="social__link" href="https://www.facebook.com/maarsengroepamsterdam/" target="_blank" rel="noopener noreferrer">
-<svg><use xlink:href="/img/sprite.svg#inst"></use></svg>
-</a>
-</li>
-<li class="social__item">
-<a class="social__link" href="https://nl.linkedin.com/company/maarsen-groep" target="_blank" rel="noopener noreferrer">
-<svg><use xlink:href="/img/sprite.svg#yt"></use></svg>
-</a>
-</li>
-<li class="social__item">
-<a class="social__link" href="https://twitter.com/maarsengroep_nl" target="_blank" rel="noopener noreferrer">
-<svg><use xlink:href="/img/sprite.svg#tw"></use></svg>
-</a>
-</li>
-<li class="social__item">
-<a class="social__link" href="https://twitter.com/maarsengroep_nl" target="_blank" rel="noopener noreferrer">
-<svg><use xlink:href="/img/sprite.svg#wsp"></use></svg>
-</a>
-</li>
-</ul>
-            <div class="social__tel">
-              <p>Huurders kantoren - tel. <a href="tel:0205407443">020 – 54 07 443</a></p>
-              <p>Huurders woningen - tel. <a href="tel:0203017730">020 – 30 17 730</a></p>
-              <p>Storing & reparatie - tel. <a href="tel:0884324100">088 – 43 24 100</a></p>
+        <div class="filter">
+          <ul class="filter__control-list">
+            <li class="filter__control is-active" data-filter=".kantoren"><a href="#">Kantoren</a></li>
+            <li class="filter__control" data-filter=".wonen"><a href="#">Wonen</a></li>
+            <li class="filter__control" data-filter=".winkels"><a href="#">Winkels</a></li>
+          </ul>
+          <div class="filter__content">
+            <div class="filter__item" data-category=".kantoren">
+              <div class="slider-filter-container"><a class="slider-filter__link-detail" href="#">Bekijk case</a>
+                <div class="slider-filter swiper-container js-slider-filter">
+                  <ul class="slider-filter__list swiper-wrapper">
+                    <li class="slider-filter__item swiper-slide"><img src="img/project1.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project2.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project3.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project4.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="slider-filter__controls">
+                    <div class="js-slider-filter-prev slider-filter__prev icon-prev-project"></div>
+                    <div class="js-slider-filter-next slider-filter__next icon-next-project"></div>
+                  </div>
+                </div>
+                <div class="slider-filter__description">Op een paar minuten van de Zuidas en vlakbij Schiphol en het
+                  Amsterdamse Bos, zijn in Amsterdam vier vrijstaande kantoorpaviljoens gerealiseerd. De totale
+                  ontwikkeling bestaat uit vijf kantoorpaviljoens, welke samen het Cuserpark vormen. De vijf paviljoens
+                  liggen rond een tuin die tevens het dak vormt van een onderliggende parkeergarage.
+                  <ul class="slider-filter__icon-list">
+                    <li class="slider-filter__icon icon-building-grey" data-toggle="tooltip" data-placement="bottom"
+                      data-offset="30" title="TooltipText"></li>
+                    <!-- li.slider-filter__icon.icon-house-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText") -->
+                    <li class="slider-filter__icon icon-area-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-location-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-parking-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-space-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-website-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="footer__col">
-            <div class="footer__links">
-              <ul class="footer_menu">
-                <li><span>Informatie</span></li>
-                <li><a href="">Disclaimer</a></li>
-                <li><a href="">Privacy statement</a></li>
-                <li><a href="">Colofon</a></li>
-                <li><a href="">Vacatures</a></li>
-              </ul>
+            <div class="filter__item" data-category=".wonen">
+              <div class="slider-filter-container"><a class="slider-filter__link-detail" href="#">Bekijk case</a>
+                <div class="slider-filter swiper-container js-slider-filter">
+                  <ul class="slider-filter__list swiper-wrapper">
+                    <li class="slider-filter__item swiper-slide"><img src="img/project1.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project2.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project3.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project4.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="slider-filter__controls">
+                    <div class="js-slider-filter-prev slider-filter__prev icon-prev-project"></div>
+                    <div class="js-slider-filter-next slider-filter__next icon-next-project"></div>
+                  </div>
+                </div>
+                <div class="slider-filter__description">Op een paar minuten van de Zuidas en vlakbij Schiphol en het
+                  Amsterdamse Bos, zijn in Amsterdam vier vrijstaande kantoorpaviljoens gerealiseerd. De totale
+                  ontwikkeling bestaat uit vijf kantoorpaviljoens, welke samen het Cuserpark vormen. De vijf paviljoens
+                  liggen rond een tuin die tevens het dak vormt van een onderliggende parkeergarage.
+                  <ul class="slider-filter__icon-list">
+                    <li class="slider-filter__icon icon-building-grey" data-toggle="tooltip" data-placement="bottom"
+                      data-offset="30" title="TooltipText"></li>
+                    <!-- li.slider-filter__icon.icon-house-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText") -->
+                    <li class="slider-filter__icon icon-area-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-location-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-parking-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-space-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-website-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter__item" data-category=".winkels">
+              <div class="slider-filter-container"><a class="slider-filter__link-detail" href="#">Bekijk case</a>
+                <div class="slider-filter swiper-container js-slider-filter">
+                  <ul class="slider-filter__list swiper-wrapper">
+                    <li class="slider-filter__item swiper-slide"><img src="img/project1.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project2.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project3.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project4.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="slider-filter__controls">
+                    <div class="js-slider-filter-prev slider-filter__prev icon-prev-project"></div>
+                    <div class="js-slider-filter-next slider-filter__next icon-next-project"></div>
+                  </div>
+                </div>
+                <div class="slider-filter__description">Op een paar minuten van de Zuidas en vlakbij Schiphol en het
+                  Amsterdamse Bos, zijn in Amsterdam vier vrijstaande kantoorpaviljoens gerealiseerd. De totale
+                  ontwikkeling bestaat uit vijf kantoorpaviljoens, welke samen het Cuserpark vormen. De vijf paviljoens
+                  liggen rond een tuin die tevens het dak vormt van een onderliggende parkeergarage.
+                  <ul class="slider-filter__icon-list">
+                    <li class="slider-filter__icon icon-building-grey" data-toggle="tooltip" data-placement="bottom"
+                      data-offset="30" title="TooltipText"></li>
+                    <!-- li.slider-filter__icon.icon-house-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText") -->
+                    <li class="slider-filter__icon icon-area-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-location-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-parking-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-space-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-website-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter__item" data-category=".winkels">
+              <div class="slider-filter-container"><a class="slider-filter__link-detail" href="#">Bekijk case</a>
+                <div class="slider-filter swiper-container js-slider-filter">
+                  <ul class="slider-filter__list swiper-wrapper">
+                    <li class="slider-filter__item swiper-slide"><img src="img/project1.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project2.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project3.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                    <li class="slider-filter__item swiper-slide"><img src="img/project4.jpg" alt="sliderFilterPhoto"
+                        width="638" height="412" />
+                      <div class="slider-filter__caption">
+                        <div class="slider-filter__location">cuserpark</div>
+                        <div class="slider-filter__city">AMSTERDAM</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="slider-filter__controls">
+                    <div class="js-slider-filter-prev slider-filter__prev icon-prev-project"></div>
+                    <div class="js-slider-filter-next slider-filter__next icon-next-project"></div>
+                  </div>
+                </div>
+                <div class="slider-filter__description">Op een paar minuten van de Zuidas en vlakbij Schiphol en het
+                  Amsterdamse Bos, zijn in Amsterdam vier vrijstaande kantoorpaviljoens gerealiseerd. De totale
+                  ontwikkeling bestaat uit vijf kantoorpaviljoens, welke samen het Cuserpark vormen. De vijf paviljoens
+                  liggen rond een tuin die tevens het dak vormt van een onderliggende parkeergarage.
+                  <ul class="slider-filter__icon-list">
+                    <li class="slider-filter__icon icon-building-grey" data-toggle="tooltip" data-placement="bottom"
+                      data-offset="30" title="TooltipText"></li>
+                    <!-- li.slider-filter__icon.icon-house-grey(data-toggle="tooltip" data-placement="bottom" title="TooltipText") -->
+                    <li class="slider-filter__icon icon-area-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-location-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-parking-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-space-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                    <li class="slider-filter__icon icon-website-grey" data-toggle="tooltip" data-placement="bottom"
+                      title="TooltipText"></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
-    <script src="js/vendor.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <ul class="contact">
+            <li class="contact__item contact__item--title">Contact</li>
+            <li class="contact__item">Postbus 87030</li>
+            <li class="contact__item">1080 JA Amsterdam</li>
+            <li class="contact__item"><span>Tel:&nbsp;</span><a href="tel:0205407400">020 540 7400</a></li>
+            <li class="contact__item"><a href="mailto:info@maarsengroep.nl">info@maarsengroep.nl</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <ul class="list social">
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/maarsengroep/" target="_blank"
+                rel="noopener noreferrer">
+                <svg>
+                  <use xlink:href="img/sprite.svg#ln"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/maarsengroepamsterdam/" target="_blank"
+                rel="noopener noreferrer">
+                <svg>
+                  <use xlink:href="img/sprite.svg#inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://nl.linkedin.com/company/maarsen-groep" target="_blank"
+                rel="noopener noreferrer">
+                <svg>
+                  <use xlink:href="img/sprite.svg#yt"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://twitter.com/maarsengroep_nl" target="_blank"
+                rel="noopener noreferrer">
+                <svg>
+                  <use xlink:href="img/sprite.svg#tw"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://twitter.com/maarsengroep_nl" target="_blank"
+                rel="noopener noreferrer">
+                <svg>
+                  <use xlink:href="img/sprite.svg#wsp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="social__tel">
+            <p>Huurders kantoren - tel. <a href="tel:0205407443">020 – 54 07 443</a></p>
+            <p>Huurders woningen - tel. <a href="tel:0203017730">020 – 30 17 730</a></p>
+            <p>Storing & reparatie - tel. <a href="tel:0884324100">088 – 43 24 100</a></p>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__links">
+            <ul class="footer_menu">
+              <li><span>Informatie</span></li>
+              <li><a href="">Disclaimer</a></li>
+              <li><a href="">Privacy statement</a></li>
+              <li><a href="">Colofon</a></li>
+              <li><a href="">Vacatures</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
