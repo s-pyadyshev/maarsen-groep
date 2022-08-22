@@ -40,10 +40,10 @@ $features-bg-mobile: $color-dark-green;
             margin: 0 35px 0 0;
         }
 
-        img {
-            display: block;
-            width: 100%;
-            height: 100%;
+        svg {
+            width: 54px;
+            height: 54px;
+            background-color: $color-elephant;
         }
     }
 

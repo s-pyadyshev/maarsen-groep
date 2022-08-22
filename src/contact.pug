@@ -1,0 +1,60 @@
+//- Insert common template for all pages
+extends ./templates/_base-template
+
+include ./components/banner/banner
+include ./components/title/title
+
+block head
+    - var pageTitle = 'Title';
+
+block variables
+    - var theme = "theme-default"
+
+block content
+    main.main
+        +banner('img/news-hero-background.jpg', 'Contact, kantoren, wonen, storingen en repartie')
+        section.section.contacts.section--topical.history-vacancy
+            .container
+                h2.title contact
+                ul.contacts__list
+                    li
+                        .card-topical.card-topical--contacts
+                            .card-topical__background.contacts__background-green
+                                p.card-topical-title Huurders 
+                                p.card-topical-title Kantoren
+                            .card-topical__wrap
+                                p.card-topical__text Serviceverzoeken kunt u telefonisch melden bij onze servicemedewerker.
+                                p.card-topical__text Bij calamiteiten verzoeken wij u, ons te allen tijde te bellen op het telefoonnummer.
+                                p.card-topical__text Servicedesk<br> <a class="contacts__link" href="tel:310205407443">+31 (0)20 – 540 74 43</a>
+                                a(href="").card-topical__link service@maarsengroep.nl
+                    li
+                        .card-topical.card-topical--contacts
+                            .card-topical__background.contacts__background-black
+                                p.card-topical-title Huurders 
+                                p.card-topical-title Woningen
+                            .card-topical__wrap
+                                p.card-topical__text Maarsen Groep heeft het beheer van haar woningportefeuille uitbesteed aan MGVM Wonen en Fris Vastgoed management (voor huurders van Gershwin Brothers), daarmee biedt de Maarsen Groep samen met MVGM Wonen en Fris Vastgoed management voor elke huurder een passend en zorgeloos thuis!
+                                p.card-topical__text <strong>Huurders Gershwin Brothers</strong><br> Fris Vastgoed management
+                                p.card-topical__text Storingen en reparatieverzoeken<br><a class="card-topical__link" href="tel:310203017730">+31 (0)20 – 301 77 30</a>
+                                a(href="").card-topical__link vastgoedmanagement@fris.nl
+                    li
+                        .card-topical.card-topical--contacts
+                            .card-topical__background.contacts__background-green
+                                p.card-topical-title Storing &
+                                p.card-topical-title Reparatie
+                            .card-topical__wrap
+                                p.card-topical__text.text-strong MVGM Wonen<br>Storingen en reparatieverzoeken<br>088 – 432 41 00
+                                p.card-topical__text Meldingen die geen haast hebben, kunnen doorgegeven worden via het contactformulier op de website van MVGM.
+                                a(href="").card-topical__link mvgm.nl/storing-melden
+            section.section.section--map
+                .container
+                    .section__inner
+                        .section__description
+                            .section__description-background 
+                                h1.section__title Maarsen<br>groep
+                                h3 bezoekadres
+                                p Buitenveldertselaan 106<br>1081 AB AMSTERDAM <a class="card-topical__link" href="tel:310205407400">+31 (0)20 – 540 7400</a><br>Postbus 87030<br>1080 JA AMSTERDAM
+                                a(href="mailto:info@maarsengroep.nl").card-topical__email info@maarsengroep.nl
+                            .section__description-map
+
+

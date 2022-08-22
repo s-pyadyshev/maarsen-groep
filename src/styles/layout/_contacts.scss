@@ -97,6 +97,7 @@
     background-color: $color-dark-gray;
     padding-top: 60px;
     padding-bottom: 44px;
+
     @include desktop {
         padding-top: 117px;
         padding-bottom: 86px;
@@ -111,7 +112,7 @@
     width: 100%;
 
     @include tablet {
-        width: 37%;
+        width: 34%;
     }
 }
 
@@ -121,15 +122,17 @@
 
 .section--map .section__title-wrap {
     display: flex;
-    position: relative;
+    position: absolute;
     left: 30px;
+
     @include desktop {
         left: -175px;
     }
 }
 
 .section--map .section__inner {
-    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
 
     .section--intro & {
         position: relative;
@@ -143,44 +146,62 @@
     }
 }
 
-.section__description-map {
-    background-color: $color-white;
-    width: 100%;
-    @include tablet {
-        width: 67%;
-    }
-}
-
-.section__description {
+.section--map .section__description {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    width: 100%;
 
     @include tablet {
         flex-direction: row;
     }
 }
 
+.section__description-map {
+    background-color: $color-white;
+    width: 100%;
+    min-height: 300px;
+
+    @include tablet {
+        width: 66%;
+    }
+}
+
 .section__description-background {
     display: flex;
     flex-direction: column;
+    padding: 80px 40px 40px 40px;
 
-    padding: 82px 60px 60px 72px;
+    @include tablet {
+        padding: 95px 60px 60px 95px;
+    }
+
     @include desktop {
         padding: 95px 60px 60px 148px;
     }
 }
 
 .section--map .section__title {
-    top: -18px;
+    top: 0;
+    left: 20px;
     position: absolute;
     font-size: 24px;
+
     @include tablet {
-        font-size: 36px;
+        font-size: 24px;
     }
+
     @include desktop {
+        top: -8px;
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    @media (min-width: 1600px) {
         font-size: 64px;
         line-height: 71px;
+        left: -160px;
+        top: -13px;
     }
 }
 
