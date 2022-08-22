@@ -1,0 +1,210 @@
+.contacts__background-green {
+    background-color: $color-dark-green;
+}
+.contacts__background-black {
+    background-color: $color-black;
+}
+.contacts__background-green .card-topical-title:first-child {
+    color: $color-black;
+}
+.card-topical__background .card-topical-title:last-child {
+    color: $color-white;
+}
+
+.contacts__background-black .card-topical-title:first-child {
+    color: $color-dark-green;
+}
+.contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet {
+        margin-right: -24px;
+        margin-left: -24px;
+    }
+}
+
+.contacts__list li {
+    width: 100%;
+    flex-shrink: 1;
+    margin-bottom: 22px;
+    @include tablet {
+        width: 50%;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    @include desktop {
+        width: calc(100% / 3);
+        margin-bottom: 52px;
+    }
+}
+
+.card-topical-title {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    @include desktop {
+        font-size: 40px;
+    }
+}
+
+.card-topical__background {
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2px;
+    @include desktop {
+        min-height: 350px;
+    }
+}
+
+.contacts .title {
+    margin-bottom: 40px;
+    @include desktop {
+        margin-bottom: 86px;
+    }
+}
+
+.contacts .card-topical__text {
+    margin-bottom: 23px;
+    @include tablet {
+        line-height: 20px;
+    }
+}
+
+.contacts__link {
+    color: $color-black;
+    text-decoration: none;
+}
+
+.contacts .card-topical__link {
+    font-size: 16px;
+    text-transform: lowercase;
+    margin-top: 0;
+    letter-spacing: 0;
+}
+
+.contacts__list li:nth-child(2) .card-topical__text .card-topical__link {
+    margin: 0;
+    color: $color-black;
+}
+
+.section--map {
+    background-color: $color-dark-gray;
+    padding-top: 60px;
+    padding-bottom: 44px;
+    @include desktop {
+        padding-top: 117px;
+        padding-bottom: 86px;
+    }
+}
+
+.section__description-background {
+    background-color: $color-dark-green;
+}
+
+.section__description-background {
+    width: 100%;
+
+    @include tablet {
+        width: 37%;
+    }
+}
+
+.section--map .section__title {
+    color: $color-white;
+}
+
+.section--map .section__title-wrap {
+    display: flex;
+    position: relative;
+    left: 30px;
+    @include desktop {
+        left: -175px;
+    }
+}
+
+.section--map .section__inner {
+    flex-wrap: wrap;
+
+    .section--intro & {
+        position: relative;
+        display: flex;
+        padding-top: 60px;
+
+        @include tablet {
+            padding-top: 0;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.section__description-map {
+    background-color: $color-white;
+    width: 100%;
+    @include tablet {
+        width: 67%;
+    }
+}
+
+.section__description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+    }
+}
+
+.section__description-background {
+    display: flex;
+    flex-direction: column;
+
+    padding: 82px 60px 60px 72px;
+    @include desktop {
+        padding: 95px 60px 60px 148px;
+    }
+}
+
+.section--map .section__title {
+    top: -18px;
+    position: absolute;
+    font-size: 24px;
+    @include tablet {
+        font-size: 36px;
+    }
+    @include desktop {
+        font-size: 64px;
+        line-height: 71px;
+    }
+}
+
+.section--map h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.5rem;
+}
+
+.section--map p {
+    color: $color-white;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.section--map .card-topical__link {
+    color: $color-white;
+    margin-bottom: 21px;
+}
+
+.card-topical__email {
+    color: $color-black;
+    text-decoration: none;
+    margin-top: 20px;
+}
