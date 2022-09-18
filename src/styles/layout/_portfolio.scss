@@ -175,10 +175,20 @@
 
             .slider-filter__prev {
                 left: 13px;
+                width: 20px;
+                height: 24px;
+                border-style: solid;
+                border-width: 12px 20px 12px 0;
+                border-color: transparent #fff transparent transparent;
             }
 
             .slider-filter__next {
                 right: 13px;
+                width: 20px;
+                height: 24px;
+                border-style: solid;
+                border-width: 12px 0 12px 20px;
+                border-color: transparent transparent transparent #fff;
             }
         }
 

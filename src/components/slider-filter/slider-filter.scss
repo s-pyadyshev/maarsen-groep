@@ -57,17 +57,27 @@ $slider-filter-shadow: rgba(0, 0, 0, 0.1);
     &__icon-list {
         display: flex;
         justify-content: space-between;
-        margin-top: 50px;
+        margin-top: auto;
     }
 
     &__icon {
         cursor: pointer;
         margin-right: 16px;
         margin-left: 16px;
+        transition-property: filter opacity;
+        transition-duration: $transition-duration;
 
         @include desktop {
             margin-right: 0;
             margin-left: 0;
+        }
+
+        &:hover {
+            filter: invert(62%) sepia(27%) saturate(737%) hue-rotate(61deg)
+                brightness(97%) contrast(95%);
+            transition-property: filter opacity;
+            transition-duration: $transition-duration;
+            opacity: 0.6;
         }
     }
 

@@ -1,11 +1,14 @@
 $header-bg-main: #f3f3f8;
-$header-bg: rgba(255, 255, 255, 0.8);
+$header-bg: #f3f3f8;
 $header-bg-mobile: #fff;
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 2;
     flex-grow: 0;
-    position: relative;
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: $header-bg-mobile;

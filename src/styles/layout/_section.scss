@@ -42,14 +42,14 @@ $section-title-color-projects: #fff;
 
         @include desktop {
             flex-direction: row;
-            font-size: 1.8rem;
+            font-size: 18px;
             width: calc(100% - 226px);
         }
 
         p {
             font-size: 16px;
-            line-height: 19px;
-            letter-spacing: 0.06rem;
+            line-height: 20px;
+            letter-spacing: 0.04rem;
             color: $color-white;
             max-width: 100%;
             width: 100%;
@@ -89,7 +89,7 @@ $section-title-color-projects: #fff;
     left: 0;
     font-family: $font-family-gotham-bold;
     font-size: 40px;
-    line-height: 1.3;
+    line-height: 1.16;
     letter-spacing: 4px;
     text-transform: uppercase;
     color: $color-black;
@@ -97,13 +97,14 @@ $section-title-color-projects: #fff;
 
     @include tablet {
         font-size: 36px;
-        letter-spacing: 18px;
+        letter-spacing: 15px;
         color: $section-title-color;
     }
 
     @include desktop {
-        top: -18px;
-        font-size: 58px;
+        top: -8px;
+        left: 6px;
+        font-size: 36px;
     }
 
     .section--projects-header & {
@@ -114,7 +115,7 @@ $section-title-color-projects: #fff;
 
 .section__title-bar {
     font-family: $font-family-gotham-bold, Arial, sans-serif;
-    font-size: 1.1rem;
+    font-size: 11px;
     margin-bottom: 0;
     text-transform: uppercase;
     color: $section-title-bar;
@@ -169,7 +170,6 @@ $section-title-color-projects: #fff;
         max-width: 100%;
         width: 0;
         overflow: visible;
-        position: relative;
 
         @include tablet {
             width: 60px;
@@ -288,7 +288,7 @@ $section-title-color-projects: #fff;
     }
 
     @include desktop {
-        width: 44%;
+        width: 45%;
         height: 100%;
     }
 
@@ -310,7 +310,7 @@ $section-title-color-projects: #fff;
     @include desktop {
         width: 56%;
         height: 100%;
-        padding: 76px 58px 36px 54px;
+        padding: 83px 46px 36px 54px;
     }
 
     h3 {

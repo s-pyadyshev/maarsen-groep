@@ -8,5 +8,6 @@ $(document).ready(function () {
     @@include('partials/filter.js');
     @@include('partials/slider-topical.js');
     @@include('partials/portfolio-tabs.js');
+    @@include('partials/toggle.js');
     $('[data-toggle="tooltip"]').tooltip();
 });

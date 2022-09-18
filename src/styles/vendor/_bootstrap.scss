@@ -38,7 +38,7 @@ $container-max-widths: (
 }
 
 //tooltip overrides
-$tooltip-bg: #0085b8;
+$tooltip-bg: $color-dark-green;
 
 .bs-tooltip-bottom .arrow::before,
 .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
@@ -55,5 +55,5 @@ $tooltip-bg: #0085b8;
 .tooltip-inner {
     padding: 6px 12px;
     border-radius: 0;
-    background-color: #0085b8;
+    background-color: $tooltip-bg;
 }

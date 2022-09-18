@@ -27,14 +27,19 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-top: 65px;
     font-family: $font-family;
     font-size: $font-size;
     line-height: $line-height;
     margin: 0;
     background-color: $body-bg;
-    color: $body-color ;
+    color: $body-color;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+
+    @include tablet {
+        padding-top: 90px;
+    }
 
     &.mobile-menu-active {
         overflow: hidden;
