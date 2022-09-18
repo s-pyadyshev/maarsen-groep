@@ -18,6 +18,8 @@ New / updated pages:
 
 <a href="https://s-pyadyshev.github.io/maarsen-groep/build/contact.html">Contact<a>
 
+<a href="https://s-pyadyshev.github.io/maarsen-groep/build/about.html">Over Ons<a>
+
 Old pages:
 
 <a href="https://s-pyadyshev.github.io/maarsen-groep/build/partners.html">https://s-pyadyshev.github.io/maarsen-groep/build/partners.html<a>

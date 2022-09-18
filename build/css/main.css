@@ -1877,6 +1877,12 @@ button.swiper-pagination-bullet {
   justify-content: center;
 }
 
+.footer_menu a:hover,
+.footer_menu a:focus,
+.footer_menu a:active {
+  color: #6db657;
+}
+
 .footer_menu li a,
 .footer_menu li span {
   font-family: "outfit", Arial, sans-serif;
@@ -2816,6 +2822,12 @@ button.swiper-pagination-bullet {
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   color: #fff;
+}
+
+.contact a:hover,
+.contact a:focus,
+.contact a:active {
+  color: #6db657;
 }
 
 .features {

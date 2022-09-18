@@ -33,5 +33,11 @@ $contact-title: $color-green;
         @include transition;
         text-decoration: none;
         color: $contact-color;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-dark-green;
+        }
     }
 }

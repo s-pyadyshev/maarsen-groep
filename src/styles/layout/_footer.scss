@@ -105,6 +105,14 @@ $footer-link-color: #62747d;
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-dark-green;
+        }
+    }
 }
 
 .footer_menu li a,
