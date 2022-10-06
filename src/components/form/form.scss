@@ -46,9 +46,14 @@ $form-control-border: $text-color-secondary;
     }
 
     @include tablet {
-        max-width: 126px;
+        max-width: 90px;
         width: 100%;
-        margin-right: 30px;
+        margin-right: 20px;
         margin-bottom: 0;
+    }
+
+    @include desktop {
+        max-width: 126px;
+        margin-right: 30px;
     }
 }

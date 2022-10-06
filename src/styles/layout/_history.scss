@@ -18,14 +18,16 @@
 
     &__detail {
         display: none;
-        margin-top: 20px;
-
-        @include desktop {
-            margin-top: 46px;
-        }
+        opacity: 0;
 
         &.is-open {
-            display: flex;
+            display: flex !important;
+            margin-top: 20px;
+            opacity: 1;
+
+            @include desktop {
+                margin-top: 46px;
+            }
         }
     }
 

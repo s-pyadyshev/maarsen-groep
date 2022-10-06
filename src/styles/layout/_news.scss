@@ -9,17 +9,26 @@
     @include tablet {
         margin-right: -24px;
         margin-left: -24px;
+        justify-content: center;
+    }
+
+    @include desktop {
+        justify-content: flex-start;
     }
 }
 
 .news__list li {
-    width: 100%;
+    width: 406px;
     flex-shrink: 1;
     margin-bottom: 22px;
+    margin-right: auto;
+    margin-left: auto;
+
     @include tablet {
-        width: 50%;
         padding-right: 24px;
         padding-left: 24px;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     @include desktop {
@@ -70,4 +79,79 @@
     color: $color-dark-green;
     font-size: 16px;
     margin-top: 0;
+}
+
+.section--topical .card-topical__link,
+.card-topical--news a,
+.card-topical--news a:visited {
+    color: #6db657;
+    text-decoration: none;
+}
+
+.section--topical .card-topical__link:hover {
+    color: #6db657;
+    text-decoration: underline;
+}
+
+.js-slider-news {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    .slider-news__archive {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+
+        @include desktop {
+            position: absolute;
+            bottom: 0;
+            right: 100px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    .js-slider-news-pagination {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin: 40px 0 0;
+        z-index: 1;
+
+        @include desktop {
+            margin: 40px 0 -40px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $color-light;
+            opacity: 1;
+            margin: 0 10px 10px;
+
+            @include desktop {
+                width: 20px;
+                height: 20px;
+                margin: 0 10px 20px;
+            }
+
+            &:last-child {
+                margin: 0 10px;
+            }
+
+            &.swiper-pagination-bullet-active {
+                background-color: $color-dark-green;
+            }
+        }
+    }
 }

@@ -10,6 +10,14 @@ $contact-title: $color-green;
     &__item {
         letter-spacing: 0.3px;
 
+        @include tablet {
+            font-size: 14px;
+        }
+
+        @include desktop {
+            font-size: 16px;
+        }
+
         &:not(:last-child) {
             margin-bottom: 16px;
 

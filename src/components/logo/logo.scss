@@ -2,6 +2,10 @@
     display: block;
     width: 150px;
 
+    @include tablet {
+        width: 120px;
+    }
+
     @include desktop {
         width: 200px;
     }

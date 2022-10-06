@@ -20,7 +20,8 @@
     }
 
     .swiper-slide {
-        box-shadow: 5px 8px 8px rgba(34, 60, 80, 0.25);
+        height: auto;
+        box-shadow: 4px 10px 10px rgba(34, 60, 80, 0.25);
     }
 
     .section__topical-pagination {
@@ -81,16 +82,12 @@
 
         &__image {
             width: 100%;
-            height: 180px;
-
-            @include desktop {
-                height: 236px;
-            }
+            height: 350px;
 
             img {
                 display: block;
                 width: 100%;
-                height: 100%;
+                height: inherit;
                 object-fit: cover;
                 object-position: top center;
             }
@@ -103,7 +100,7 @@
             height: 100%;
 
             @include desktop {
-                padding: 20px 30px;
+                padding: 30px;
             }
         }
 
@@ -140,7 +137,7 @@
             font-size: 14px;
             line-height: 16px;
             color: $color-black;
-            margin: 0;
+            margin: 0 0 40px 0;
 
             @include tablet {
                 font-size: 16px;
@@ -171,12 +168,18 @@
 }
 
 .card-topical--news {
-    .card-topical__image {
-        height: 240px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: none !important;
 
-        @include desktop {
-            height: 350px;
-        }
+    a:hover {
+        color: #6db657;
+        text-decoration: underline;
+    }
+    .card-topical__image {
+        height: 358px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .card-topical__subtitle {

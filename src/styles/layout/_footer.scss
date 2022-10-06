@@ -30,6 +30,20 @@ $footer-link-color: #62747d;
             text-align: left;
         }
 
+        @include desktop {
+            width: calc(100% / 3);
+        }
+
+        &:first-child {
+            @include tablet {
+                width: 30%;
+            }
+
+            @include desktop {
+                width: calc(100% / 3);
+            }
+        }
+
         &:not(:last-child) {
             border-bottom: 1px solid $footer-border;
 
@@ -40,7 +54,12 @@ $footer-link-color: #62747d;
 
         &:nth-child(2) {
             @include tablet {
+                width: 40%;
                 margin-top: -20px;
+            }
+
+            @include desktop {
+                width: calc(100% / 3);
             }
         }
 
@@ -49,7 +68,12 @@ $footer-link-color: #62747d;
             margin-bottom: 40px;
 
             @include tablet {
+                width: 30%;
                 margin-bottom: 0;
+            }
+
+            @include desktop {
+                width: calc(100% / 3);
             }
         }
     }
@@ -77,7 +101,7 @@ $footer-link-color: #62747d;
         @include tablet {
             position: static;
             display: block;
-            font-size: 13px;
+            font-size: 14px;
         }
 
         a {
@@ -100,6 +124,7 @@ $footer-link-color: #62747d;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10px;
 
     @include tablet {
         flex-direction: column;
@@ -125,8 +150,16 @@ $footer-link-color: #62747d;
     padding-right: 20px;
     padding-left: 20px;
 
+    @include tablet {
+        font-size: 14px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     @include desktop {
         font-size: 16px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 

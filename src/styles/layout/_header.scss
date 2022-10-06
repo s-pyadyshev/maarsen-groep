@@ -14,13 +14,14 @@ $header-bg-mobile: #fff;
     background-color: $header-bg-mobile;
 
     @include tablet {
-        min-height: 90px;
-        padding-top: 20px;
+        min-height: 60px;
+        padding-top: 15px;
         padding-bottom: 0;
         background-color: $header-bg;
     }
 
     @include desktop {
+        min-height: 90px;
         padding-top: 24px;
         padding-bottom: 0;
     }
@@ -60,7 +61,6 @@ $header-bg-mobile: #fff;
         flex-grow: 1;
         justify-content: flex-start;
         align-items: center;
-        flex-wrap: wrap;
         max-width: 1100px;
         height: 100vh;
         padding-top: 30px;
@@ -69,6 +69,8 @@ $header-bg-mobile: #fff;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
+            flex-wrap: nowrap;
+            align-items: center;
             height: auto;
             padding-top: 0;
         }

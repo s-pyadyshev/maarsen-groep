@@ -3,6 +3,7 @@ $lang-switch-border: $text-color-secondary;
 $lang-switch-border-mobile: $color-green;
 
 .lang-switch {
+    flex-shrink: 0;
 
     &__btn {
         display: block;
@@ -36,6 +37,14 @@ $lang-switch-border-mobile: $color-green;
 
         &:not(:last-child) {
             margin-right: 22px;
+
+            @include tablet {
+                margin-right: 0;
+            }
+
+            @include desktop {
+                margin-right: 22px;
+            }
         }
     }
 }

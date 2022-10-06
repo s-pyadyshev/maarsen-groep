@@ -102,8 +102,8 @@ $section-title-color-projects: #fff;
     }
 
     @include desktop {
-        top: -8px;
-        left: 6px;
+        top: -5px;
+        left: 7px;
         font-size: 36px;
     }
 
@@ -265,8 +265,8 @@ $section-title-color-projects: #fff;
     video {
         display: block;
         width: 100%;
-        max-width: 1168px;
-        height: 180px;
+        max-width: unset;
+        height: auto;
         margin: 0 auto;
 
         @include tablet {

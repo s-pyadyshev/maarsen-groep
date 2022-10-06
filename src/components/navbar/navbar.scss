@@ -10,14 +10,14 @@ $navbar-color: #122631;
 
     @include tablet {
         font-size: 14px;
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
 
     @include desktop {
         font-size: 13px;
         width: auto;
         margin-right: 45px;
-        margin-bottom: 0;
+        padding-top: 7px;
     }
 
     .sub-menu {
@@ -28,13 +28,17 @@ $navbar-color: #122631;
         @include tablet {
             display: none;
             position: absolute;
-            top: 45px;
+            top: 31px;
             left: 0;
             padding: 18px 26px;
             background-color: #fff;
             box-shadow: 0 4px 7px rgba(0, 0, 0, 0.75);
             border-top: 8px solid $color-green;
             text-align: left;
+        }
+
+        @include desktop {
+            top: 41px;
         }
 
         li {
@@ -89,8 +93,8 @@ $navbar-color: #122631;
             margin-bottom: 36px;
 
             @include tablet {
-                padding-right: 20px;
-                padding-left: 20px;
+                padding-right: 10px;
+                padding-left: 10px;
                 margin-bottom: 0;
             }
 
@@ -101,15 +105,19 @@ $navbar-color: #122631;
         }
 
         &:before {
-            @include desktop {
+            @include tablet {
                 content: "";
                 opacity: 0;
                 position: absolute;
-                bottom: -38px;
+                bottom: -23px;
                 left: 0;
                 width: 100%;
                 height: 8px;
                 background-color: $color-green;
+            }
+
+            @include desktop {
+                bottom: -34px;
             }
         }
 
@@ -129,6 +137,12 @@ $navbar-color: #122631;
         color: $navbar-color;
 
         @include tablet {
+            font-size: 10px;
+            padding-bottom: 0;
+        }
+
+        @include desktop {
+            font-size: 13px;
             padding-bottom: 38px;
         }
     }

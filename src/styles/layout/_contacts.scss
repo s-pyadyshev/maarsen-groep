@@ -72,6 +72,7 @@
 
 .contacts .card-topical__text {
     margin-bottom: 23px;
+
     @include tablet {
         line-height: 20px;
     }
@@ -207,7 +208,7 @@
         font-size: 64px;
         line-height: 71px;
         left: -160px;
-        top: -13px;
+        top: -8px;
     }
 }
 
@@ -234,4 +235,8 @@
     color: $color-black;
     text-decoration: none;
     margin-top: 20px;
+}
+
+.contacts.section--topical {
+    padding-bottom: 0;
 }

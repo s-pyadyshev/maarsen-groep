@@ -7,7 +7,12 @@
     object-fit: cover;
 }
 
+.swiper-pagination-bullets {
+    flex-wrap: wrap;
+}
+
 .swiper-pagination-bullet {
+    flex-shrink: 0;
     transition: all ease-in-out $transition-duration;
 }
 
