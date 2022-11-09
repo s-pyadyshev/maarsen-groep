@@ -260,7 +260,7 @@ $section-title-color-projects: #fff;
 }
 
 .section--video {
-    background-color: $color-black;
+    background-color: #f3f3f8;
 
     video {
         display: block;
@@ -270,11 +270,14 @@ $section-title-color-projects: #fff;
         margin: 0 auto;
 
         @include tablet {
-            height: 340px;
+            height: auto;
         }
 
         @include desktop {
-            height: 657px;
+            height: 708px;
+            margin-top: 30px;
+            object-fit: cover;
+            max-width: 1500px;
         }
     }
 }

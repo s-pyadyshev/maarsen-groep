@@ -20,10 +20,7 @@ block variables
 block content
     main.main
         section.section.section--video
-            video(width="400" controls)
-                source(src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4")
-                source(src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg")
-                Your browser does not support HTML video.
+            video(width="400" controls preload="auto" autoplay loop muted playsinline data-desktop-video="video/large.mp4" data-mobile-video="https://iconaircraft.s3.amazonaws.com/ICON_Web+4.0_Loop_1x1_DRAFT190723_26sec-mobile.mp4")
 
         section.section.section--intro
             .container

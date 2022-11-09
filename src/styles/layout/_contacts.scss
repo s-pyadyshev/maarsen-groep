@@ -125,6 +125,10 @@
 
 .section--map .section__title {
     color: $color-white;
+
+    @include desktop {
+        top: 0;
+    }
 }
 
 .section--map .section__title-wrap {

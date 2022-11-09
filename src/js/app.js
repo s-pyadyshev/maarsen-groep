@@ -10,5 +10,6 @@ $(document).ready(function () {
     @@include('partials/slider-news.js');
     @@include('partials/portfolio-tabs.js');
     @@include('partials/toggle.js');
+    @@include('partials/video.js');
     $('[data-toggle="tooltip"]').tooltip();
 });

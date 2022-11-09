@@ -22,6 +22,13 @@
     .swiper-slide {
         height: auto;
         box-shadow: 4px 10px 10px rgba(34, 60, 80, 0.25);
+
+        .card-topical__wrap {
+            @include desktop {
+                padding: 30px 30px 45px 30px;
+                position: relative;
+            }
+        }
     }
 
     .section__topical-pagination {
@@ -74,6 +81,7 @@
     }
 
     .card-topical {
+        position: relative;
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -111,6 +119,7 @@
             letter-spacing: 0.3rem;
             color: $color-black;
             margin: 0 0 14px;
+            hyphens: auto;
 
             @include tablet {
                 font-size: 16px;

@@ -110,6 +110,10 @@ svg {
     }
 }
 
+strong {
+    font-weight: bold;
+}
+
 ::-webkit-input-placeholder {
     color: $input-placeholder;
     opacity: 1;

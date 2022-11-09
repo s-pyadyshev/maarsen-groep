@@ -1,0 +1,26 @@
+.home .section--topical .card-topical__link,
+.page-template-news .section--topical .card-topical__link {
+    position: absolute;
+    bottom: 30px;
+}
+
+.single .vacancy-head__wrap {
+    @include tablet {
+        width: calc(100% - 250px);
+        padding: 0px 0 0 52px;
+    }
+}
+
+.single .vacancy-head__time {
+    @include desktop {
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: 0.6rem;
+    }
+}
+
+.single .vacancy__content {
+    @include desktop {
+        max-width: calc(100% - 250px);
+    }
+}

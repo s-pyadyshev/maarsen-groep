@@ -12,7 +12,8 @@ $form-control-border: $text-color-secondary;
             transform: translateY(-50%);
 
             @include tablet {
-                right: 0;
+                left: -20px;
+                right: unset;
             }
         }
     }

@@ -155,3 +155,16 @@
         }
     }
 }
+
+.vacancy p a,
+.vacancy p a:visited,
+.search article a,
+.search article a:visited {
+    color: #6db654;
+    text-decoration: none;
+}
+
+.vacancy p a:hover,
+.search article a:hover {
+    text-decoration: underline;
+}

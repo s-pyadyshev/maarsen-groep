@@ -168,5 +168,10 @@ $footer-link-color: #62747d;
 }
 
 .footer_menu li:first-child span {
+    display: none;
     color: $color-green;
+
+    @include tablet {
+        display: block;
+    }
 }

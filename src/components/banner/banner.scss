@@ -35,11 +35,15 @@
 
         @include desktop {
             top: auto;
-            bottom: 90px;
+            bottom: 20px;
             font-size: 64px;
             line-height: 71px;
             letter-spacing: 1.8rem;
             padding-right: 100px;
+        }
+
+        @media (min-width: 1920px) {
+            bottom: 90px;
         }
     }
 }
